@@ -19,7 +19,7 @@ QuickDropPanelShortcuts="a:Array;b:Push Button;bb:Round LED;c:Cluster;d:Numeric 
 ## Quick Drop Shortcuts - Plugins
 Copy these VIs to `<LABVIEW>\resource\dialog\QuickDrop\plugins`:
 
-**Ctrl-V** Representation, Radix & Modifiers
+### **Ctrl-V** Representation, Radix & Modifiers
 
 Changes the data type representation (i.e. U8, I64, DBL...), radix (i.e. decimal, hex, binary) and other modifiers on a numeric or string control/constant using the Quick Drop text input formatted as `TYPE[ MOD...]` where 
 
