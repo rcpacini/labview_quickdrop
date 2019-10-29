@@ -21,7 +21,7 @@ Copy these VIs to `<LABVIEW>\resource\dialog\QuickDrop\plugins`:
 
 ### **Ctrl-V** Representation, Radix & Modifiers
 
-Changes the data type representation (i.e. U8, I64, DBL...), radix (i.e. decimal, hex, binary) and other modifiers on a numeric or string control/constant using the Quick Drop text input formatted as `TYPE[ MOD...]` where 
+Changes the data type representation (i.e. U8, I64, DBL...), radix (i.e. decimal, hex, binary) and other modifiers on a numeric or string control/constant using the Quick Drop text input formatted as `[TYPE[ MOD...]]` where 
 
 `TYPE` = `u8`, `u16`, `u32`, `u64`, `i8`, `i16`, `i32`, `i64`, `sgl`, `dbl`, `ext`, `csg`, `cdb` or `cxt`
 
