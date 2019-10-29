@@ -15,3 +15,18 @@ QuickDropPanelShortcuts="a:Array;b:Push Button;bb:Round LED;c:Cluster;d:Numeric 
 1.c. Or, download the file directly:
 
 [Quick Drop Shortcuts Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/rcpacini_shortcuts.vi)
+
+## Quick Drop Shortcuts - Plugins
+Copy these VIs to `<LABVIEW>\resource\dialog\QuickDrop\plugins`:
+
+**Ctrl-V** Representation, Radix & Modifiers
+
+Changes the data type representation (i.e. U8, I64, DBL...), radix (i.e. decimal, hex, binary) and other modifiers on a numeric or string control/constant using the Quick Drop text input formatted as `TYPE[ MOD...]` where 
+
+`TYPE` = `u8`, `u16`, `u32`, `u64`, `i8`, `i16`, `i32`, `i64`, `sgl`, `dbl`, `ext`, `csg`, `cdb` or `cxt`
+
+`MOD` = `d`:decimal/default, `x`:hex, `b`:binary/backslash, `r`:toggle radix hide/show, `h`:hide inc/dec buttons, `s`:show inc/dec buttons
+
+Examples:
+Numeric selected + `u8 h x` = Change data type to unsigned 8-bit integer, hide the inc/dec buttons, display radix in hex
+String selected + `b` = Display string as backslash radix
