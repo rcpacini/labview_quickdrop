@@ -26,12 +26,12 @@ Changes the data type representation (i.e. U8, I64, DBL...), radix (i.e. decimal
 `TYPE` = `u8`, `u16`, `u32`, `u64`, `i8`, `i16`, `i32`, `i64`, `sgl`, `dbl`, `ext`, `csg`, `cdb` or `cxt`
 
 `MOD` = 
-* `d`:decimal/default, 
-* `x`:hex, 
-* `b`:binary/backslash, 
-* `r`:toggle radix hide/show, 
-* `h`:hide inc/dec buttons, 
-* `s`:show inc/dec buttons
+* `d`: decimal/default, 
+* `x`: hex, 
+* `b`: binary/backslash, 
+* `r`: toggle radix hide/show, 
+* `h`: hide inc/dec buttons, 
+* `s`: show inc/dec buttons
 
 Examples:
 Numeric selected + `u8 h x` = Change data type to unsigned 8-bit integer, hide the inc/dec buttons, display radix in hex
