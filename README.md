@@ -34,5 +34,7 @@ Changes the data type representation (i.e. U8, I64, DBL...), radix (i.e. decimal
 * `s`: show inc/dec buttons
 
 Examples:
+
 Numeric selected + `u8 h x` = Change data type to unsigned 8-bit integer, hide the inc/dec buttons, display radix in hex
+
 String selected + `b` = Display string as backslash radix
