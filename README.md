@@ -19,6 +19,14 @@ QuickDropPanelShortcuts="a:Array;b:Push Button;bb:Round LED;c:Cluster;d:Numeric 
 ## Quick Drop Shortcuts - Plugins
 Copy these VIs to `<LABVIEW>\resource\dialog\QuickDrop\plugins`:
 
+### **Ctrl-E** Resize Block Diagram
+
+Resizes the block diagram window to fit the content. (Front Panel focus does nothing).
+
+### **Ctrl-M** Merge Icon Layers
+
+Merges the VI icon layers to minimize size and avoid icon layer template collisions.
+
 ### **Ctrl-V** Representation, Radix & Modifiers
 
 Changes the data type representation (i.e. U8, I64, DBL...), radix (i.e. decimal, hex, binary) and other modifiers on a numeric or string control/constant using the Quick Drop text input formatted as `[TYPE[ MOD...]]` where 
