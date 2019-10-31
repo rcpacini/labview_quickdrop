@@ -27,6 +27,13 @@ Resizes the block diagram window to fit the content. (Front Panel focus does not
 
 Merges the VI icon layers to minimize size and avoid icon layer template collisions.
 
+### Ctrl-U | Wire Error Structure
+
+Wires the error terminal to the selected case structure and connects any unwired error tunnels.
+
+![Wire Error Structure gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rcpacini_u_unwired_error_structure.gif)
+
+
 ### Ctrl-V | Representation, Radix & Modifiers
 
 Changes the data type representation (i.e. U8, I64, DBL...), radix (i.e. decimal, hex, binary) and other modifiers on a numeric or string control/constant using the Quick Drop text input formatted as `[TYPE[ MOD...]]` where 
