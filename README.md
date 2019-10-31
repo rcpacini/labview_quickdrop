@@ -31,6 +31,8 @@ Resizes the block diagram window to fit the content. (Front Panel focus does not
 
 Merges the VI icon layers to minimize size and avoid icon layer template collisions.
 
+[Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rcpacini_m_merge_icon.vi)
+
 ### Ctrl-U | Wire Error Structure
 
 Wires the error terminal to the selected case structure and connects any unwired error tunnels.
