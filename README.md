@@ -23,6 +23,10 @@ Copy these VIs to `<LABVIEW>\resource\dialog\QuickDrop\plugins`:
 
 Resizes the block diagram window to fit the content. (Front Panel focus does nothing).
 
+![Resize Diagram gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rcpacini_e_resize_diagram.gif)
+
+[Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rcpacini_e_resize_diagram.vi)
+
 ### Ctrl-M | Merge Icon Layers
 
 Merges the VI icon layers to minimize size and avoid icon layer template collisions.
@@ -33,6 +37,7 @@ Wires the error terminal to the selected case structure and connects any unwired
 
 ![Wire Error Structure gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rcpacini_u_unwired_error_structure.gif)
 
+[Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rcpacini_u_unwired_error_structure.vi)
 
 ### Ctrl-V | Representation, Radix & Modifiers
 
