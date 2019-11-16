@@ -1,124 +1,127 @@
 # labview_quickdrop
-Quick Drop Shortcuts for LabVIEW IDE
+Ryans Quick Drop Shortcuts for LabVIEW "that you'll actually use..."
 
 
-## Quick Drop Shortcuts - Front Panel & Block Diagram 
-1.a. Copy these keys to `<LABVIEW>\LabVIEW.ini`:
-```ini
-QuickDropDiagramShortcuts="!=:Not Equal?;!=0:Not Equal To 0?;':Empty String/Path?;<:Less?;<0:Less Than 0?;<=:Less Or Equal?;<=0:Less Or Equal To 0?;=:Equal?;=0:Equal To 0?;>:Greater?;>0:Greater Than 0?;>=:Greater Or Equal?;>=0:Greater Or Equal To 0?;a:Build Array;aa:Index Array;ac:Array Constant;b:Bundle By Name;bb:False Constant;c:Cluster Constant;case:Case Structure;dbl:Numeric Constant;dia:Diagram Disable Structure;f:Format Into String;for:For Loop;fs:Flatten To String;i:Invoke Node;mer:Merge Errors;nan:Not A Number/Path/Refnum?;op:Open VI Reference;p:Property Node;s:Scan From String;se:Select;str:String Constant;tdbl:To Double Precision Float;text:To Extended Precision Float;this:VI Server Reference;t1:To Byte Integer;t2:To Word Integer;t3:To Long Integer;t4:To Quad Integer;tsgl:To Single Precision Float;tt1:To Unsigned Byte Integer;tt2:To Unsigned Word Integer;tt3:To Unsigned Long Integer;tt4:To Unsigned Quad Integer;u:Unbundle By Name;un:Unflatten From String;wh:While Loop;"
-QuickDropPanelShortcuts="a:Array;b:Push Button;bb:Round LED;c:Cluster;d:Numeric Control;dd:Numeric Indicator;en:Enum;er:Error In 3D.ctl;err:Error Out 3D.ctl;p:File Path Control;pp:File Path Indicator;s:String Control;ss:String Indicator;var:Variant;vi:VI Refnum;visa:VISA resource name;"
-```
-
-1.b. Or, run this VI snippet: [Download rp_shortcuts.vi](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/rp_shortcuts.vi)
-
-![Quick Drop Shortcuts](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/rp_shortcuts_snippet.png?raw=true "Ryan's Quick Drop Shortcuts")
+## Quick Drop - Panel & Diagram Shortcuts
+Download and run the following VI to replace the Quick Drop Panel & Diagram Shortcuts in the LabVIEW.ini configuration file:
+![Ryans Quick Drop Shortcuts](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/PanelDiagramShortcuts.vi?raw=true "Ryan's Panel and Diagram Shortcuts")
 
 
 ## Quick Drop Shortcuts - Plugins
-Copy these VIs to `<LABVIEW>\resource\dialog\QuickDrop\plugins`:
+Here's
 
-| Key | Plugin | Download |
-| --- | --- | --- |
-| `Ctrl-A` | [Arrange Diagram](#ctrl-a-arrange-diagram) | [Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/rp_arrange_diagram.vi) |
-| `Ctrl-E` | [Resize Diagram](#ctrl-e-resize-diagram) | [Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_resize_diagram.vi) |
-| `Ctrl-L` | [Inline SubVI](#ctrl-l-inline-subvi) | [Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_inline_subvi.vi) |
-| `Ctrl-M` | [Merge Icon Layers](#ctrl-m-merge-icon-layers) | [Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_merge_icon.vi) |
-| `Ctrl-U` | [Wire Error Structure](#ctrl-u-wire-error-structure) | [Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_error_structure.vi) |
-| `Ctrl-V` | [Change Representation & Visualizations](#ctrl-change-representation-visualizations) | [Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_change_representation.vi) |
-| `Ctrl-X` | [Quick Align Objects](#ctrl-x-quick-align-objects) | [Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_align_objects.vi) |
-| `Ctrl-0` | [Open in Explore...](#ctrl-0-open-in-explore) | [Download](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_explore.vi) |
+| Key | Plugin |
+| --- | --- |
+| `Ctrl-A` | [Arrange Diagram](#ctrl-a-arrange-diagram) |
+| `Ctrl-E` | [Resize Diagram](#ctrl-e-resize-diagram) |
+| `Ctrl-G` | [Get Object Info](#ctrl-g-get-object-info) |
+| `Ctrl-S` | [Execute Script](#ctrl-s-execute-script) |
 
 
 ### Ctrl-A | Arrange Diagram
-
-[Download rp_arrange_diagram.vi](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/rp_arrange_diagram.vi)
-
 Arranges the diagram according to the source & destination terminals (left to right). If nothing is selected, this horizontally aligns the top level diagram control and indicator terminals. Ctrl-Shift reverses the order to arrange the digram (right to left). Use these in combintation to clean up the block diagram quickly.
 
-![Arrange Diagram gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rp_arrange_diagram.gif)
+![Arrange Diagram gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/ctrl-a.gif)
 
 
 ### Ctrl-E | Resize Diagram
-
-[Download rp_resize_diagram.vi](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_resize_diagram.vi)
-
 Resizes the block diagram window to fit the content. (Front Panel focus does nothing).
 
-![Resize Diagram gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rp_resize_diagram.gif)
+![Resize Diagram gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/ctrl-e.gif)
 
 
-### Ctrl-L | Inline SubVI
+### Ctrl-G | Get Object Info
+Displays basic information about the panel or diagram object selected such as VI Server Class ID, Class Name, Class Hierarchy, Master Bound Rectangle, etc. This is useful during development of VI Scripting. 
 
-[Download rp_inline_subvi.vi](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_inline_subvi.vi)
-
-Inlines the selected SubVI to the parent diagram.
-
-![Inline SubVI gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rp_inline_subvi.gif)
+![Get Object Info gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/ctrl-g.gif)
 
 
-### Ctrl-M | Merge Icon Layers
+### Ctrl-S | Execute Script
+Execute a series of VI scripts using the Quick Drop textbox arguments (separated by space), for example: `Ctrl-Space + "u16 h rx" + Ctrl-S` will change any selected numerics to U16 representation, hide the inc/dec buttons and display the radix in hex. Add your own plugins using the `<labview>\resource\dialog\QuickDrop\plugins\_Script\Script_Template.vit`. 
 
-[Download rp_merge_icon.vi](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_merge_icon.vi)
+Refer to the built-in help: `Ctrl-Space + "help" + Ctrl-S`.
 
-Merges the VI icon layers to minimize size and avoid icon layer template collisions.
+![Execute Script gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/ctrl-s.gif)
 
-![Merge Icon gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rp_merge_icon.gif)
+#### Script Built-ins
+Some common actions are pre-packaged with the Execute Script Quick Drop plugin. From the `"help" + Ctrl-S`, drop down the `Script.llb\Builtins.vi` to see more information.
 
+```
+0=Open in File Explore
+a=Arrange Diagram
+aa=Align Left Edges
+as=Align Bottom Edges
+ad=Align Right Edges
+aw=Align Top Edges
+aq=Align Vertical Centers
+ae=Align Horizontal Centers
+c=Connect Pane
+cn=Cluster Size None
+cf=Cluster Size Fit
+ch=Cluster Size Horizontally
+cv=Cluster Size Vertically
+dw=Distribute Top Edges
+dq=Distribute Vertical Centers
+ds=Distribute Bottom Edges
+dg=Distribute Vertical Gap
+d=Distribute Vertical Compress
+da=Distribute Left Edges
+de=Distribute Horizontal Centers
+dd=Distribute Right Edges
+dh=Distribute Horizontal Gap
+df=Distribute Horizontal Compress 
+e=Resize Diagram Window
+er=Wire Error Structure
+h=Inc/Dec Buttons Hide
+hh=Inc/Dec Buttons Show
+in=Inline SubVI
+m=Merge Icon Layers
+o=Reset Panel Origins
+r=Radix Hide
+rd=Radix Decimal or Normal
+rx=Radix Hex
+rb=Radix Binary or Backslash
+sg=Snap to Panel Grid
+u8=Change to U8
+u16=Change to U16
+u32=Change to U32
+u64=Change to U64
+i8=Change to I8
+i16=Change to I16
+i32=Change to I32
+i64=Change to I64
+sgl=Change to SGL
+dbl=Change to DBL
+ext=Change to EXT
+csg=Change to CSG
+cdb=Change to CDB
+cxt=Change to CXT
+```
 
-### Ctrl-U | Wire Error Structure
+#### Script Plugins
+Create your own script plugins by using the `_Script\Script_Template.vit`. Unlike, Quick Drop plugins which can only have single key shortcuts, Script Plugins can handle more than one key characters specified in the VI Description. The VI Description must include a `[SCRIPT]` configuration section formatted with `shortcut=Short Name` key, value pairs. 
 
-[Download rp_error_structure.vi](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_error_structure.vi)
+Script Plugin VIs:
+1. Must have the same connector pane as `QuickDrop\plugins\_Script\Script_Template.vit`
+2. Must be placed in the `QuickDrop\plugins\_Script` directory (as a VI or in an LLB)
+3. 
 
-Wires the error terminal to the selected case structure and connects any unwired error tunnels.
+```
+\_Script\MyCustomPlugin.vi
+    VI Description:
+        '''Add description of plugin here
+        
+        // Add key=value pairs for each shortcut supported by this plugin
+        [SCRIPT]
+        shortcut=Short Name
+        abc=Create Local Variable
+        '''
+```
 
-![Wire Error Structure gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rp_error_structure.gif)
-
-
-### Ctrl-V | Change Representation & Visualizations
-
-[Download rp_change_representation.vi](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_change_representation.vi)
-
-Changes the data type representation (i.e. U8, I64, DBL...), radix (i.e. decimal, hex, binary) and other modifiers on a numeric or string control/constant using the Quick Drop text input formatted as `[TYPE[ MOD...]]` where 
-
-`TYPE` = `u8`, `u16`, `u32`, `u64`, `i8`, `i16`, `i32`, `i64`, `sgl`, `dbl`, `ext`, `csg`, `cdb` or `cxt`
-
-`MOD` = 
-* `d`: decimal/default, 
-* `x`: hex, 
-* `b`: binary/backslash, 
-* `r`: toggle radix hide/show, 
-* `h`: hide inc/dec buttons, 
-* `s`: show inc/dec buttons
-
-Examples:
-
-Numeric selected + `u8 h x` = Change data type to unsigned 8-bit integer, hide the inc/dec buttons, display radix in hex
-
-String selected + `b` = Display string as backslash radix
-
-![Change Representation gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rp_change_representation.gif)
-
-
-### Ctrl-X | Quick Align Objects
-
-[Download rp_align_objects.vi](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_align_objects.vi)
-
-Aligns selected objects by keyboard shortcuts.
-
-* Align Left = `Left` or `A`
-* Align Right = `Right` or `D`
-* Align Top = `Up` or `W`
-* Align Bottom = `Bottom` or `S`
-* Distribute Vertical Compress = `X`
-
-![Align Objects gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rp_align_objects.gif)
-
-
-### Ctrl-0 | Open in Explore
-
-[Download rp_explore.vi](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/plugins/rp_explore.vi)
-
-Navigate to the active VI in File Explore...
-
-![Explore gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/rp_explore.gif)
+#### Script Plugin Execution
+Here is the order of operations when the Execute Script Quick Drop plugin is called: 
+1. Create the default shortcut map all VI Descriptions located in the `QuickDrop\plugins\_Script` directory
+2. Import the `QuickDrop\plugins\_Script\shortcuts.txt` to load the user modified shortcut actions.
+3. Parse the Quick Drop textbox arguments and execute the corresponding vi + argument
+4. Export any modifications to the `shortcuts.txt`
 
