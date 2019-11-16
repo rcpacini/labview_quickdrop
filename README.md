@@ -8,7 +8,7 @@ Download and run the following VI to replace the Quick Drop Panel & Diagram Shor
 
 
 ## Quick Drop Shortcuts - Plugins
-Here's
+There are a total of 4 Quick Drop Plugins I use daily: 
 
 | Key | Plugin |
 | --- | --- |
@@ -17,6 +17,7 @@ Here's
 | `Ctrl-G` | [Get Object Info](#ctrl-g-get-object-info) |
 | `Ctrl-S` | [Execute Script](#ctrl-s-execute-script) |
 
+I quickly realized that there aren't enough keys on the keyboard for each Quick Drop i needed, so instead I created the **Execute Script** plugin which uses the Quick Drop Textbox to define a series of commands to execute on the selected panel or diagram objects. The plugin also includes a built-in help and configuration dialog (similar to the Quick-Drop Plugins dialog) and adds custom plugin support to expand on the built-in actions.
 
 ### Ctrl-A | Arrange Diagram
 Arranges the diagram according to the source & destination terminals (left to right). If nothing is selected, this horizontally aligns the top level diagram control and indicator terminals. Ctrl-Shift reverses the order to arrange the digram (right to left). Use these in combintation to clean up the block diagram quickly.
