@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-11-16 00:38:10" Creator="rcpac" Comments="" ID="255da8181d591605d803b7998fb721ae">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-11-17 20:38:54" Creator="rcpac" Comments="" ID="9005cf53f2cb3741d744b1111aad952b">
   <Library_General_Settings>
     <Package_File_Name>Ryans_Quick_Drop_Shortcuts</Package_File_Name>
-    <Library_Version>0.1.0.6</Library_Version>
+    <Library_Version>0.1.0.9</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\releases</Library_Output_Folder>
@@ -21,7 +21,7 @@
       <Pre-Build_VI/>
       <Post-Build_VI/>
       <Pre-Install_VI/>
-      <Post-Install_VI/>
+      <Post-Install_VI>Post-Install Custom Action.vi</Post-Install_VI>
       <Pre-Uninstall_VI/>
       <Post-Uninstall_VI/>
     </Custom_Action_VIs>
@@ -50,7 +50,8 @@ Refer to GitHub.com/rcpacini/labview_quickdrop for more info.</Description>
 - Ctrl-A: Arrange Diagram
 - Ctrl-S: Execute Script
 - Ctrl-E: Resize Diagram Window
-- Ctrl-G: Get Object Info</Release_Notes>
+- Ctrl-G: Get Object Info
+- Supports include remaining arguments with '--' prefix</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
