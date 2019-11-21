@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-11-18 17:34:58" Creator="rcpac" Comments="" ID="d59d78b10238db54d6aec8bd06c9ca01">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-11-20 23:04:17" Creator="rcpac" Comments="" ID="9d6964fb91dccfc71f3cdba36818a1d0">
   <Library_General_Settings>
     <Package_File_Name>Ryans_Quick_Drop_Shortcuts</Package_File_Name>
-    <Library_Version>0.1.0.12</Library_Version>
+    <Library_Version>0.1.1.15</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\releases</Library_Output_Folder>
@@ -45,13 +45,21 @@
       <Copyright/>
       <Packager>Ryan Pacini</Packager>
       <URL>https://github.com/rcpacini/labview_quickdrop</URL>
-      <Release_Notes>0.1.0 - Initial Beta Release
-- Ctrl-A: Arrange Diagram
-- Ctrl-S: Execute Script
-- Ctrl-E: Resize Diagram Window
-- Ctrl-G: Get Object Info
-- Scripts support remaining arguments with '--' prefix
-- Added example: examples\rcpacini\Ryans Quick Drop Shortcuts\Ryans Quick Drop Example.vit</Release_Notes>
+      <Release_Notes>0.1.1 - Script.lvlib
+- Features:
+    - Moved support VIs into Script.lvlib to avoid namespace conflicts
+    - asg = Align and Snap to Grid now moves controls and indicators if nothing is selected
+- Added:
+    - sc = Select Controls
+    - sc = Select Indicators
+    - sci = Select Controls and Indicators
+    - sn = Select None
+    - v = Show Label
+    - vv = Hide Label
+- Bugs Fixes:
+    - '--' now supports Text GObjects
+    - Ctrl-A: fixed Named Bundler arrange
+    - Fixed Bundler and NamedBundler to ignore cluster type if any inputs are wired.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
