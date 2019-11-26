@@ -21,7 +21,12 @@
 		<Item Name="_builtins_connect_pane.vi" Type="VI" URL="../_builtins_connect_pane.vi"/>
 		<Item Name="_builtins_connect_pane_lookup.vi" Type="VI" URL="../_builtins_connect_pane_lookup.vi"/>
 		<Item Name="_builtins_distribute_selected.vi" Type="VI" URL="../_builtins_distribute_selected.vi"/>
+		<Item Name="_builtins_error_structure.vi" Type="VI" URL="../_builtins_error_structure.vi"/>
 		<Item Name="_builtins_has_selection.vi" Type="VI" URL="../_builtins_has_selection.vi"/>
+		<Item Name="_builtins_icon.vi" Type="VI" URL="../_builtins_icon.vi"/>
+		<Item Name="_builtins_icon_color.vi" Type="VI" URL="../_builtins_icon_color.vi"/>
+		<Item Name="_builtins_icon_create.vi" Type="VI" URL="../_builtins_icon_create.vi"/>
+		<Item Name="_builtins_icon_text_add.vi" Type="VI" URL="../_builtins_icon_text_add.vi"/>
 		<Item Name="_builtins_inline_sub_vi.vi" Type="VI" URL="../_builtins_inline_sub_vi.vi"/>
 		<Item Name="_builtins_label_move.vi" Type="VI" URL="../_builtins_label_move.vi"/>
 		<Item Name="_builtins_label_rename.vi" Type="VI" URL="../_builtins_label_rename.vi"/>
@@ -39,7 +44,6 @@
 		<Item Name="_builtins_visible_label.vi" Type="VI" URL="../_builtins_visible_label.vi"/>
 		<Item Name="_builtins_visibles_hide.vi" Type="VI" URL="../_builtins_visibles_hide.vi"/>
 		<Item Name="_builtins_visibles_reset.vi" Type="VI" URL="../_builtins_visibles_reset.vi"/>
-		<Item Name="_builtins_wire_error_structure.vi" Type="VI" URL="../_builtins_wire_error_structure.vi"/>
 	</Item>
 	<Item Name="_script" Type="Folder">
 		<Item Name="_script_execute.vi" Type="VI" URL="../_script_execute.vi"/>
@@ -53,6 +57,7 @@
 		<Item Name="_builtins_align.ctl" Type="VI" URL="../_builtins_align.ctl"/>
 		<Item Name="_builtins_arrange.ctl" Type="VI" URL="../_builtins_arrange.ctl"/>
 		<Item Name="_builtins_distribute.ctl" Type="VI" URL="../_builtins_distribute.ctl"/>
+		<Item Name="_builtins_icon.ctl" Type="VI" URL="../_builtins_icon.ctl"/>
 		<Item Name="_builtins_label_position.ctl" Type="VI" URL="../_builtins_label_position.ctl"/>
 		<Item Name="_builtins_selection.ctl" Type="VI" URL="../_builtins_selection.ctl"/>
 		<Item Name="_script_defs.ctl" Type="VI" URL="../_script_defs.ctl"/>
