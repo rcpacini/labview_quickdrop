@@ -7,7 +7,7 @@ See [releases](releases) to download other versions.
 
 | VI Package | Version | LabVIEW |
 | --- | --- | --- |
-| [ryans_quick_drop_shortcuts-0.1.3.16.vip](releases/ryans_quick_drop_shortcuts-0.1.3.16.vip?raw=True) | v0.1.3.16 | 2019 |
+| [ryans_quick_drop_shortcuts-0.1.3.16.vip](https://github.com/rcpacini/labview_quickdrop/raw/master/releases/ryans_quick_drop_shortcuts-0.1.3.16.vip) | v0.1.3.16 | 2019 |
 
 Refer to the [Release Notes](docs/ReleaseNotes.md) for version information.<br>
 
