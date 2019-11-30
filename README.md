@@ -3,7 +3,7 @@ Ryan's Quick Drop Shortcuts for LabVIEW "that you'll actually use..."
 
 ## Releases
 To install, download and run the VI Package (\*.vip) using JKI's VI Package Management (VIPM) which is installed with LabVIEW.<br>
-See [releases](master/releases) to download other versions.
+See [releases](releases) to download other versions.
 
 | VI Package | Version | LabVIEW |
 | --- | --- | --- |
