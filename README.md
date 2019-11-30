@@ -1,14 +1,25 @@
 # labview_quickdrop
-Ryans Quick Drop Shortcuts for LabVIEW "that you'll actually use..."
+Ryan's Quick Drop Shortcuts for LabVIEW "that you'll actually use..."
 
+## Releases
+To install, download and run the VI Package (\*.vip) using JKI's VI Package Management (VIPM) which is installed with LabVIEW.<br>
+See [releases](master/releases) to download other versions.
+
+| VI Package | Version | LabVIEW |
+| --- | --- | --- |
+| [ryans_quick_drop_shortcuts-0.1.3.16.vip](releases\ryans_quick_drop_shortcuts-0.1.3.16.vip) | v0.1.3.16 | 2019 |
+
+Refer to the [Release Notes](docs/ReleaseNotes.md) for version information.<br>
 
 ## Quick Drop - Panel & Diagram Shortcuts
-Download and run the following VI to replace the Quick Drop Panel & Diagram Shortcuts in the LabVIEW.ini configuration file:
-![Ryans Quick Drop Shortcuts](https://raw.github.com/rcpacini/labview_quickdrop/master/QuickDrop/PanelDiagramShortcuts.vi?raw=true "Ryan's Panel and Diagram Shortcuts")
+Download and run the following VI Snippet to replace the Quick Drop Panel & Diagram Shortcuts in the LabVIEW.ini configuration file.
 
+![Ryans Quick Drop Shortcuts](docs/PanelDiagramShortcuts.png)
+
+[Download](docs/PanelDiagramShortcuts.png?raw=True)
 
 ## Quick Drop Shortcuts - Plugins
-There are a total of 4 Quick Drop Plugins I use daily: 
+There are a total of 4 Quick Drop Plugins I use daily:
 
 | Key | Plugin |
 | --- | --- |
@@ -17,112 +28,61 @@ There are a total of 4 Quick Drop Plugins I use daily:
 | `Ctrl-G` | [Get Object Info](#ctrl-g-get-object-info) |
 | `Ctrl-S` | [Execute Script](#ctrl-s-execute-script) |
 
-I quickly realized that there aren't enough keys on the keyboard for each Quick Drop i needed, so instead I created the **Execute Script** plugin which uses the Quick Drop Textbox to define a series of commands to execute on the selected panel or diagram objects. The plugin also includes a built-in help and configuration dialog (similar to the Quick-Drop Plugins dialog) and adds custom plugin support to expand on the built-in actions.
+I quickly realized there aren't enough keys on the keyboard for each Quick Drop shortcut I needed. So instead, I created the **Execute Script** plugin which uses the Quick Drop Textbox to define a series of commands to execute on the selected panel or diagram objects. The plugin includes built-in help and a shortcut configuration editor (similar to the Quick-Drop Plugins dialog). <br>
+Refer to the [Execute Script](docs/ExecuteScript.md) for support to add your own extensions.
 
 ### Ctrl-A | Arrange Diagram
-Arranges the diagram according to the source & destination terminals (left to right). If nothing is selected, this horizontally aligns the top level diagram control and indicator terminals. Ctrl-Shift reverses the order to arrange the digram (right to left). Use these in combintation to clean up the block diagram quickly.
+Arranges diagram (`Ctrl-A`) cleans up the selected block diagram objects using their adjacent position of the source or destination terminals (left-to-right or right-to-left). If nothing is selected, this horizontally aligns the top level diagram control and indicator terminals. `Ctrl-Shift-A` reverses the order to arrange the diagram (right-to-left). Use these in combination to clean up the block diagram quickly.
 
-![Arrange Diagram gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/ctrl-a.gif)
+Object alignment depends on the **number of connected terminals** and the **arrange order (Left-to-Right or Right-to-Left)**. If more that one terminal is connected, the following defines which terminal used to align:
+
+| # Ins | # Outs | `Ctrl=-A` (L2R) | `Ctrl-Shift-A` (R2L) |
+| --- | --- | --- | --- |
+| 1+ | 0 | Bottom-Left Input | Top-Left Input |
+| 0 | 1+ | Bottom-Right Output | Top-Right Output |
+| 1+ | 1+ | Bottom-Left Input | Bottom-Right Output |
+
+![Arrange Diagram gif](docs/ArrangeDiagram.gif)
 
 
 ### Ctrl-E | Resize Diagram
 Resizes the block diagram window to fit the content. (Front Panel focus does nothing).
 
-![Resize Diagram gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/ctrl-e.gif)
+![Resize Diagram gif](docs/ResizeDiagram.gif)
 
 
 ### Ctrl-G | Get Object Info
-Displays basic information about the panel or diagram object selected such as VI Server Class ID, Class Name, Class Hierarchy, Master Bound Rectangle, etc. This is useful during development of VI Scripting. 
+Displays basic information about the panel or diagram object selected such as VI Server Class ID, Class Name, Class Hierarchy, Master Bound Rectangle, etc. This is useful during development of VI Scripting.
 
-![Get Object Info gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/ctrl-g.gif)
+![Get Object Info gif](docs/GetInfo.gif)
 
 
-### Ctrl-S | Execute Script
-Execute a series of VI scripts using the Quick Drop textbox arguments (separated by space), for example: `Ctrl-Space + "u16 h rx" + Ctrl-S` will change any selected numerics to U16 representation, hide the inc/dec buttons and display the radix in hex. Add your own plugins using the `<labview>\resource\dialog\QuickDrop\plugins\_Script\Script_Template.vit`. 
+### [Ctrl-S | Execute Script](docs/ExecuteScript.md)
+Executes a series of VI scripts (i.e. macros) using the Quick Drop textbox arguments (separated by space) on the selected panel or diagram objects. By default, there are a bunch of [Built-in Scripts](docs/ExecuteScript.md) for common operations, such as: align + distribute objects, connect terminals to pane, change representation and hide/show display objects. <br>
+Refer to the [Execute Script](docs/ExecuteScript.md) page for more information.
 
-Refer to the built-in help: `Ctrl-Space + "help" + Ctrl-S`.
+Getting Started: `Ctrl-Space + "help" + Ctrl-S`
 
-![Execute Script gif](https://raw.github.com/rcpacini/labview_quickdrop/master/docs/ctrl-s.gif)
+![Execute Script Help gif](docs/ExecuteScriptHelp.gif)
 
-#### Script Built-ins
-Some common actions are pre-packaged with the Execute Script Quick Drop plugin. From the `"help" + Ctrl-S`, drop down the `Script.llb\Builtins.vi` to see more information.
+*Script Example:*<br> Select a Numeric Control, open Quick Drop (`Ctrl-Space`), type `u8 h rx -- Data in`, then press `Ctrl-S` to change the selected numeric control to **U8 representation**, hide the **+/- buttons** and display the **radix in hex** and rename the label to **"Data in"**.
 
-```
-0=Open in File Explore
-a=Arrange Diagram
-aa=Align Left Edges
-as=Align Bottom Edges
-ad=Align Right Edges
-aw=Align Top Edges
-aq=Align Vertical Centers
-ae=Align Horizontal Centers
-c=Connect Pane
-cn=Cluster Size None
-cf=Cluster Size Fit
-ch=Cluster Size Horizontally
-cv=Cluster Size Vertically
-dw=Distribute Top Edges
-dq=Distribute Vertical Centers
-ds=Distribute Bottom Edges
-dg=Distribute Vertical Gap
-d=Distribute Vertical Compress
-da=Distribute Left Edges
-de=Distribute Horizontal Centers
-dd=Distribute Right Edges
-dh=Distribute Horizontal Gap
-df=Distribute Horizontal Compress 
-e=Resize Diagram Window
-er=Wire Error Structure
-h=Inc/Dec Buttons Hide
-hh=Inc/Dec Buttons Show
-in=Inline SubVI
-m=Merge Icon Layers
-o=Reset Panel Origins
-r=Radix Hide
-rd=Radix Decimal or Normal
-rx=Radix Hex
-rb=Radix Binary or Backslash
-sg=Snap to Panel Grid
-u8=Change to U8
-u16=Change to U16
-u32=Change to U32
-u64=Change to U64
-i8=Change to I8
-i16=Change to I16
-i32=Change to I32
-i64=Change to I64
-sgl=Change to SGL
-dbl=Change to DBL
-ext=Change to EXT
-csg=Change to CSG
-cdb=Change to CDB
-cxt=Change to CXT
+![Execute Script gif](docs/ExecuteScript.gif)
+
+#### Ctrl-S | Execute Script - Custom Plugins
+Create your own script plugins using the VI Template:<br>
+`<labview>\resource\dialog\QuickDrop\plugins\_Script\Script_Template.vit`.<br>
+Save the VI to the `_Script` directory and edit the VI Description to update the `[SCRIPT]` section with `shortcut=Short Name` (key=value) pairs for the supported shortcuts. <br>
+Refer to the [Execute Script](docs/ExecuteScript.md) page for more information.
+```ini
+// Add VI description
+
+[SCRIPT]
+abc=My Shortcut
+--xyz=My Shortcut with Args
 ```
 
-#### Script Plugins
-Create your own script plugins by using the `_Script\Script_Template.vit`. Unlike, Quick Drop plugins which can only have single key shortcuts, Script Plugins can handle more than one key characters specified in the VI Description. The VI Description must include a `[SCRIPT]` configuration section formatted with `shortcut=Short Name` key, value pairs. 
+## Support
+Submit a ticket for bug fixes or feature requests. Feedback is welcome!
 
-Script Plugin VIs:
-1. Must have the same connector pane as `QuickDrop\plugins\_Script\Script_Template.vit`
-2. Must be placed in the `QuickDrop\plugins\_Script` directory (as a VI or in an LLB)
-3. 
-
-```
-\_Script\MyCustomPlugin.vi
-    VI Description:
-        '''Add description of plugin here
-        
-        // Add key=value pairs for each shortcut supported by this plugin
-        [SCRIPT]
-        shortcut=Short Name
-        abc=Create Local Variable
-        '''
-```
-
-#### Script Plugin Execution
-Here is the order of operations when the Execute Script Quick Drop plugin is called: 
-1. Create the default shortcut map all VI Descriptions located in the `QuickDrop\plugins\_Script` directory
-2. Import the `QuickDrop\plugins\_Script\shortcuts.txt` to load the user modified shortcut actions.
-3. Parse the Quick Drop textbox arguments and execute the corresponding vi + argument
-4. Export any modifications to the `shortcuts.txt`
-
+-Ryan
