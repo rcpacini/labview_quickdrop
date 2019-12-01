@@ -23,10 +23,10 @@ There are a total of 4 Quick Drop Plugins I use daily:
 
 | Key | Plugin |
 | --- | --- |
-| `Ctrl-A` | [Arrange Diagram](#ctrl-a-arrange-diagram) |
-| `Ctrl-E` | [Resize Diagram](#ctrl-e-resize-diagram) |
-| `Ctrl-G` | [Get Object Info](#ctrl-g-get-object-info) |
-| `Ctrl-S` | [Execute Script](#ctrl-s-execute-script) |
+| `Ctrl-A` | [Arrange Diagram](#ctrl-a--arrange-diagram) |
+| `Ctrl-E` | [Resize Diagram](#ctrl-e--resize-diagram) |
+| `Ctrl-G` | [Get Object Info](#ctrl-g--get-object-info) |
+| `Ctrl-S` | [Execute Script](#ctrl-s--execute-script) |
 
 I quickly realized there aren't enough keys on the keyboard for each Quick Drop shortcut I needed. So instead, I created the **Execute Script** plugin which uses the Quick Drop Textbox to define a series of commands to execute on the selected panel or diagram objects. The plugin includes built-in help and a shortcut configuration editor (similar to the Quick-Drop Plugins dialog). <br>
 Refer to the [Execute Script](docs/ExecuteScript.md) for support to add your own extensions.
