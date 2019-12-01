@@ -16,7 +16,7 @@ Download and run the following VI Snippet to replace the Quick Drop Panel & Diag
 
 ![Ryans Quick Drop Shortcuts](docs/PanelDiagramShortcuts.png)
 
-[Download](docs/PanelDiagramShortcuts.png?raw=True)
+[Download](https://github.com/rcpacini/labview_quickdrop/raw/master/docs/PanelDiagramShortcuts.png)
 
 ## Quick Drop Shortcuts - Plugins
 There are a total of 4 Quick Drop Plugins I use daily:
