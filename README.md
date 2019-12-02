@@ -23,15 +23,15 @@ There are a total of 4 Quick Drop Plugins I use daily:
 
 | Key | Plugin |
 | --- | --- |
-| `Ctrl-A` | [Arrange Diagram](#ctrl-a--arrange-diagram) |
-| `Ctrl-E` | [Resize Diagram](#ctrl-e--resize-diagram) |
-| `Ctrl-G` | [Get Object Info](#ctrl-g--get-object-info) |
-| `Ctrl-S` | [Execute Script](#ctrl-s--execute-script) |
+| `Ctrl-A` | [Arrange Diagram](#ctrl-a-=-arrange-diagram) |
+| `Ctrl-E` | [Resize Diagram](#ctrl-e-=-resize-diagram) |
+| `Ctrl-G` | [Get Object Info](#ctrl-g-=-get-object-info) |
+| `Ctrl-S` | [Execute Script](#ctrl-s-=-execute-script) |
 
 I quickly realized there aren't enough keys on the keyboard for each Quick Drop shortcut I needed. So instead, I created the **Execute Script** plugin which uses the Quick Drop Textbox to define a series of commands to execute on the selected panel or diagram objects. The plugin includes built-in help and a shortcut configuration editor (similar to the Quick-Drop Plugins dialog). <br>
 Refer to the [Execute Script](docs/ExecuteScript.md) for support to add your own extensions.
 
-### Ctrl-A | Arrange Diagram
+### `Ctrl-A` = Arrange Diagram
 Arranges diagram (`Ctrl-A`) cleans up the selected block diagram objects using their adjacent position of the source or destination terminals (left-to-right or right-to-left). If nothing is selected, this horizontally aligns the top level diagram control and indicator terminals. `Ctrl-Shift-A` reverses the order to arrange the diagram (right-to-left). Use these in combination to clean up the block diagram quickly.
 
 Object alignment depends on the **number of connected terminals** and the **arrange order (Left-to-Right or Right-to-Left)**. If more that one terminal is connected, the following defines which terminal used to align:
@@ -45,19 +45,19 @@ Object alignment depends on the **number of connected terminals** and the **arra
 ![Arrange Diagram gif](docs/ArrangeDiagram.gif)
 
 
-### Ctrl-E | Resize Diagram
+### `Ctrl-E` = Resize Diagram
 Resizes the block diagram window to fit the content. (Front Panel focus does nothing).
 
 ![Resize Diagram gif](docs/ResizeDiagram.gif)
 
 
-### Ctrl-G | Get Object Info
+### `Ctrl-G` = Get Object Info
 Displays basic information about the panel or diagram object selected such as VI Server Class ID, Class Name, Class Hierarchy, Master Bound Rectangle, etc. This is useful during development of VI Scripting.
 
 ![Get Object Info gif](docs/GetInfo.gif)
 
 
-### [Ctrl-S | Execute Script](docs/ExecuteScript.md)
+### `Ctrl-S` = Execute Script
 Executes a series of VI scripts (i.e. macros) using the Quick Drop textbox arguments (separated by space) on the selected panel or diagram objects. By default, there are a bunch of [Built-in Scripts](docs/ExecuteScript.md) for common operations, such as: align + distribute objects, connect terminals to pane, change representation and hide/show display objects. <br>
 Refer to the [Execute Script](docs/ExecuteScript.md) page for more information.
 
