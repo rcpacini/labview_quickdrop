@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-11-26 16:28:27" Creator="rcpac" Comments="" ID="63cb66b4c644b9f3e08e354c4bc66926">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-12-10 16:49:44" Creator="rcpac" Comments="" ID="d44b3dc641dc2d3ac96a5724279f70de">
   <Library_General_Settings>
     <Package_File_Name>Ryans_Quick_Drop_Shortcuts</Package_File_Name>
-    <Library_Version>0.1.3.17</Library_Version>
+    <Library_Version>0.1.4.19</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\releases</Library_Output_Folder>
@@ -28,15 +28,15 @@
     <VI_Package_Configuration_File>RyansQuickDropShortcuts.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>Ryan's Quick Drop Shortcuts for OCD Developers</One_Line_Description_Summary>
-      <Description>Let's skip the niceties... Quick Drop Shortcut Plugins you'll actually use...
+      <Description>Ryan's Quick Drop Shortcut Plugins for clean code...
 
 &lt;i&gt;For the Spaghetti Coder:&lt;/i&gt;
 &lt;b&gt;Ctrl-A: Arrange Diagram&lt;/b&gt; Aligns the selected diagram objects to the adjacent terminal position. Created for OCD developers like myself, you will have the cleanest looking block daigram of your peers. By default the objects are arranged Left-to-Right, hold Shift to sort Right-to-Left. The Bottom-Left and Bottom-Right terminals take priority when vertically arranging objects. If no diagram objects are selected, this will align the control and indicator terminals to the outer most horizontal terminal positions.
 
 &lt;i&gt;For the VI Scripting Nerds:&lt;/i&gt;
-&lt;b&gt;Ctrl-S: Execute Script&lt;/b&gt; Use the Quick Drop Textbox to execute a series of VI scripts on the selected objects. For example: Ctrl-Space + &lt;b&gt;u16 h rx&lt;/b&gt; + Ctrl-S = Change to U16, Hide Inc/Dec Buttons, Show Radix in Hex.  Add you own plugins to &lt;b&gt;QuickDrop\plugins\_Script&lt;/b&gt;. I'm getting bored explaining this, just refer to the built-in help: Ctrl-Space + type "help" + Ctrl-S
+&lt;b&gt;Ctrl-S: Execute Script&lt;/b&gt; Use the Quick Drop Textbox to execute a series of VI scripts on the selected objects. For example: Ctrl-Space + &lt;b&gt;u16 hb rx&lt;/b&gt; + Ctrl-S = Change to U16, Hide Inc/Dec Buttons, Show Radix in Hex.  Add you own plugins to &lt;b&gt;QuickDrop\plugins\_Script&lt;/b&gt;. I'm getting bored explaining this, just refer to the built-in help: Ctrl-Space + type "help" + Ctrl-S
 
-&lt;i&gt;For the VGA Developers:&lt;/i&gt;
+&lt;i&gt;For Tiny Monitors:&lt;/i&gt;
 &lt;b&gt;Ctrl-E: Resize Diagram Window&lt;/b&gt; Resizes the diagram window to content to minimize waste. WHAT DO WE WANT?!? MORE REALESTATE!
 
 &lt;i&gt;For the Sentient Coder:&lt;/i&gt;
@@ -45,11 +45,24 @@
       <Copyright/>
       <Packager>Ryan Pacini</Packager>
       <URL>https://github.com/rcpacini/labview_quickdrop</URL>
-      <Release_Notes>v0.1.3: 
-- Added:
-    - --icon=Edit VI Icon - add text, header, colors, owning library icon
-- Bugs Fixes:
-    - None</Release_Notes>
+      <Release_Notes>v0.1.4: 
+Plugin Shortcuts:
+- Fixed Change to Type ('u8..cxt') to disable "Adapt to Source" on numeric constants
+- Fixed Connect Pane ('c') to wire all controls if nothing is selected
+- Fixed Arrange ('a') to only move terminals horizontally with Shift pressed
+- Fixed Align ('aX') to use Master Bound Rectangle position
+- Renamed shortcuts for hide/show ('hX/sX')
+- Renamed Align horizontal/vertical centers ('ah/av')
+- Renamed Distribute horizontal/vertical centers ('dh/dv')
+- Renamed Selection ('selX')
+- Added Snap Panel Grid with Offset ('sgo') to move controls offset to panel origin prior to snap
+- Added VI Voodoo ('vi') to hide inc/dec buttons, snap to grid with offset, reset origin and connect pane
+- Removed Inline SubVI ('in') shortcut. Note: LV2019 includes right-click menu: "Replace with SubVI Contents..."
+- Removed Align and Snap to Grid ('asg') - Incorporated into Arrange ('a') instead
+
+Panel/Diagram Shortcuts:
+- Renamed change to representation ('u8..cxt')
+- Added array operations ('ad/ar'), enum ('e') and timestamp ('t') shortcuts</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>

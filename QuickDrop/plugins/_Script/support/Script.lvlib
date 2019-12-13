@@ -11,39 +11,47 @@
 </Property>
 	<Item Name="_builtins" Type="Folder">
 		<Item Name="_builtins_align_selected.vi" Type="VI" URL="../_builtins_align_selected.vi"/>
+		<Item Name="_builtins_arrange_constant.vi" Type="VI" URL="../_builtins_arrange_constant.vi"/>
 		<Item Name="_builtins_arrange_diagram.vi" Type="VI" URL="../_builtins_arrange_diagram.vi"/>
 		<Item Name="_builtins_arrange_node.vi" Type="VI" URL="../_builtins_arrange_node.vi"/>
 		<Item Name="_builtins_arrange_object.vi" Type="VI" URL="../_builtins_arrange_object.vi"/>
+		<Item Name="_builtins_arrange_panel.vi" Type="VI" URL="../_builtins_arrange_panel.vi"/>
 		<Item Name="_builtins_arrange_terminal_index.vi" Type="VI" URL="../_builtins_arrange_terminal_index.vi"/>
 		<Item Name="_builtins_arrange_terminals.vi" Type="VI" URL="../_builtins_arrange_terminals.vi"/>
-		<Item Name="_builtins_arrange_wire_joints.vi" Type="VI" URL="../_builtins_arrange_wire_joints.vi"/>
 		<Item Name="_builtins_cluster_autosize.vi" Type="VI" URL="../_builtins_cluster_autosize.vi"/>
 		<Item Name="_builtins_connect_pane.vi" Type="VI" URL="../_builtins_connect_pane.vi"/>
 		<Item Name="_builtins_connect_pane_lookup.vi" Type="VI" URL="../_builtins_connect_pane_lookup.vi"/>
 		<Item Name="_builtins_distribute_selected.vi" Type="VI" URL="../_builtins_distribute_selected.vi"/>
 		<Item Name="_builtins_error_structure.vi" Type="VI" URL="../_builtins_error_structure.vi"/>
-		<Item Name="_builtins_has_selection.vi" Type="VI" URL="../_builtins_has_selection.vi"/>
 		<Item Name="_builtins_icon.vi" Type="VI" URL="../_builtins_icon.vi"/>
 		<Item Name="_builtins_icon_color.vi" Type="VI" URL="../_builtins_icon_color.vi"/>
 		<Item Name="_builtins_icon_create.vi" Type="VI" URL="../_builtins_icon_create.vi"/>
 		<Item Name="_builtins_icon_text_add.vi" Type="VI" URL="../_builtins_icon_text_add.vi"/>
-		<Item Name="_builtins_inline_sub_vi.vi" Type="VI" URL="../_builtins_inline_sub_vi.vi"/>
-		<Item Name="_builtins_label_move.vi" Type="VI" URL="../_builtins_label_move.vi"/>
-		<Item Name="_builtins_label_rename.vi" Type="VI" URL="../_builtins_label_rename.vi"/>
 		<Item Name="_builtins_merge_icon_layers.vi" Type="VI" URL="../_builtins_merge_icon_layers.vi"/>
+		<Item Name="_builtins_move_label.vi" Type="VI" URL="../_builtins_move_label.vi"/>
+		<Item Name="_builtins_move_relative.vi" Type="VI" URL="../_builtins_move_relative.vi"/>
 		<Item Name="_builtins_numeric_representation.vi" Type="VI" URL="../_builtins_numeric_representation.vi"/>
 		<Item Name="_builtins_radix.vi" Type="VI" URL="../_builtins_radix.vi"/>
-		<Item Name="_builtins_reset_to_origin.vi" Type="VI" URL="../_builtins_reset_to_origin.vi"/>
-		<Item Name="_builtins_resize_diagram_window.vi" Type="VI" URL="../_builtins_resize_diagram_window.vi"/>
+		<Item Name="_builtins_rect_align.vi" Type="VI" URL="../_builtins_rect_align.vi"/>
+		<Item Name="_builtins_rect_map.vi" Type="VI" URL="../_builtins_rect_map.vi"/>
+		<Item Name="_builtins_rect_map_controls.vi" Type="VI" URL="../_builtins_rect_map_controls.vi"/>
+		<Item Name="_builtins_rect_next_column.vi" Type="VI" URL="../_builtins_rect_next_column.vi"/>
+		<Item Name="_builtins_rect_to_grid.vi" Type="VI" URL="../_builtins_rect_to_grid.vi"/>
+		<Item Name="_builtins_rect_to_relative_move.vi" Type="VI" URL="../_builtins_rect_to_relative_move.vi"/>
+		<Item Name="_builtins_rename_caption.vi" Type="VI" URL="../_builtins_rename_caption.vi"/>
+		<Item Name="_builtins_rename_label.vi" Type="VI" URL="../_builtins_rename_label.vi"/>
+		<Item Name="_builtins_reset_origin.vi" Type="VI" URL="../_builtins_reset_origin.vi"/>
+		<Item Name="_builtins_resize_window.vi" Type="VI" URL="../_builtins_resize_window.vi"/>
 		<Item Name="_builtins_select_controls.vi" Type="VI" URL="../_builtins_select_controls.vi"/>
-		<Item Name="_builtins_snap_to_panel_grid.vi" Type="VI" URL="../_builtins_snap_to_panel_grid.vi"/>
+		<Item Name="_builtins_selection_list.vi" Type="VI" URL="../_builtins_selection_list.vi"/>
+		<Item Name="_builtins_snap_to_grid.vi" Type="VI" URL="../_builtins_snap_to_grid.vi"/>
+		<Item Name="_builtins_snap_to_grid_position.vi" Type="VI" URL="../_builtins_snap_to_grid_position.vi"/>
 		<Item Name="_builtins_terminals_wired.vi" Type="VI" URL="../_builtins_terminals_wired.vi"/>
 		<Item Name="_builtins_visible_caption.vi" Type="VI" URL="../_builtins_visible_caption.vi"/>
 		<Item Name="_builtins_visible_inc_dec.vi" Type="VI" URL="../_builtins_visible_inc_dec.vi"/>
 		<Item Name="_builtins_visible_index.vi" Type="VI" URL="../_builtins_visible_index.vi"/>
 		<Item Name="_builtins_visible_label.vi" Type="VI" URL="../_builtins_visible_label.vi"/>
-		<Item Name="_builtins_visibles_hide.vi" Type="VI" URL="../_builtins_visibles_hide.vi"/>
-		<Item Name="_builtins_visibles_reset.vi" Type="VI" URL="../_builtins_visibles_reset.vi"/>
+		<Item Name="_builtins_wire_joints_terminal.vi" Type="VI" URL="../_builtins_wire_joints_terminal.vi"/>
 	</Item>
 	<Item Name="_script" Type="Folder">
 		<Item Name="_script_execute.vi" Type="VI" URL="../_script_execute.vi"/>
