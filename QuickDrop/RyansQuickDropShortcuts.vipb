@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-12-10 16:49:44" Creator="rcpac" Comments="" ID="d44b3dc641dc2d3ac96a5724279f70de">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-12-13 17:07:26" Creator="rcpac" Comments="" ID="35d489493dd45adc86b62075f293c0c2">
   <Library_General_Settings>
     <Package_File_Name>Ryans_Quick_Drop_Shortcuts</Package_File_Name>
-    <Library_Version>0.1.4.19</Library_Version>
+    <Library_Version>0.2.0.20</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\releases</Library_Output_Folder>
@@ -27,7 +27,7 @@
     </Custom_Action_VIs>
     <VI_Package_Configuration_File>RyansQuickDropShortcuts.vipc</VI_Package_Configuration_File>
     <Description>
-      <One_Line_Description_Summary>Ryan's Quick Drop Shortcuts for OCD Developers</One_Line_Description_Summary>
+      <One_Line_Description_Summary>Ryan's Quick Drop Shortcuts for Advanced LabVIEW Developers</One_Line_Description_Summary>
       <Description>Ryan's Quick Drop Shortcut Plugins for clean code...
 
 &lt;i&gt;For the Spaghetti Coder:&lt;/i&gt;
@@ -45,7 +45,7 @@
       <Copyright/>
       <Packager>Ryan Pacini</Packager>
       <URL>https://github.com/rcpacini/labview_quickdrop</URL>
-      <Release_Notes>v0.1.4: 
+      <Release_Notes>v0.2.0: 
 Plugin Shortcuts:
 - Fixed Change to Type ('u8..cxt') to disable "Adapt to Source" on numeric constants
 - Fixed Connect Pane ('c') to wire all controls if nothing is selected
@@ -55,6 +55,9 @@ Plugin Shortcuts:
 - Renamed Align horizontal/vertical centers ('ah/av')
 - Renamed Distribute horizontal/vertical centers ('dh/dv')
 - Renamed Selection ('selX')
+- Added Rename Caption ('--c') to rename control caption and hide the label
+- Added Arrange ('a') front panel support to clean up and snap controls to grid, or align by left/top if has selection
+- Added Resize Window ('e') front panel support to resize to controls and reset panel origins
 - Added Snap Panel Grid with Offset ('sgo') to move controls offset to panel origin prior to snap
 - Added VI Voodoo ('vi') to hide inc/dec buttons, snap to grid with offset, reset origin and connect pane
 - Removed Inline SubVI ('in') shortcut. Note: LV2019 includes right-click menu: "Replace with SubVI Contents..."
@@ -62,7 +65,7 @@ Plugin Shortcuts:
 
 Panel/Diagram Shortcuts:
 - Renamed change to representation ('u8..cxt')
-- Added array operations ('ad/ar'), enum ('e') and timestamp ('t') shortcuts</Release_Notes>
+- Added array operations ('ad/ar'), enum ('e'), timestamp ('t') and close reference ('cl') shortcuts</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -138,24 +141,6 @@ Panel/Diagram Shortcuts:
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>plugins/Arrange Diagram.vi</Path>
-        <Destination>11</Destination>
-        <Additional_Destination>false</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>plugins/Get Object Info.vi</Path>
-        <Destination>11</Destination>
-        <Additional_Destination>false</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>plugins/Resize Diagram Window.vi</Path>
-        <Destination>11</Destination>
-        <Additional_Destination>false</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
         <Path>plugins/Script.vi</Path>
         <Destination>11</Destination>
         <Additional_Destination>false</Additional_Destination>
@@ -164,6 +149,24 @@ Panel/Diagram Shortcuts:
       <Destination_Overrides>
         <Path>examples/Ryans Quick Drop Example.vit</Path>
         <Destination>1</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>plugins/Resize Window.vi</Path>
+        <Destination>11</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>plugins/Get Info.vi</Path>
+        <Destination>11</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>plugins/Arrange.vi</Path>
+        <Destination>11</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
