@@ -51,6 +51,7 @@
 		<Item Name="_builtins_visible_inc_dec.vi" Type="VI" URL="../_builtins_visible_inc_dec.vi"/>
 		<Item Name="_builtins_visible_index.vi" Type="VI" URL="../_builtins_visible_index.vi"/>
 		<Item Name="_builtins_visible_label.vi" Type="VI" URL="../_builtins_visible_label.vi"/>
+		<Item Name="_builtins_visible_scrollbar.vi" Type="VI" URL="../_builtins_visible_scrollbar.vi"/>
 		<Item Name="_builtins_wire_joints_terminal.vi" Type="VI" URL="../_builtins_wire_joints_terminal.vi"/>
 	</Item>
 	<Item Name="_script" Type="Folder">
