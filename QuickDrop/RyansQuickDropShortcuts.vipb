@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-12-13 18:41:36" Creator="rcpac" Comments="" ID="aa93d519f3c2dde4315f65ed4a864d7a">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-12-17 17:45:22" Creator="rcpac" Comments="" ID="e278d9492177b798e671e9ca2a2f4086">
   <Library_General_Settings>
     <Package_File_Name>Ryans_Quick_Drop_Shortcuts</Package_File_Name>
-    <Library_Version>0.2.0.21</Library_Version>
+    <Library_Version>0.3.0.24</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\releases</Library_Output_Folder>
@@ -28,45 +28,23 @@
     <VI_Package_Configuration_File>RyansQuickDropShortcuts.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>Ryan's Quick Drop Shortcuts for Advanced LabVIEW Developers</One_Line_Description_Summary>
-      <Description>Ryan's Quick Drop Shortcut Plugins for clean code...
+      <Description>Ryan's Quick Drop Shortcut Plugins and Tools Plugins for clean code...
 
-&lt;i&gt;For the Spaghetti Coder:&lt;/i&gt;
+Quick Drop Plugins:
 &lt;b&gt;Ctrl-A: Arrange Diagram&lt;/b&gt; Aligns the selected diagram objects to the adjacent terminal position. Created for OCD developers like myself, you will have the cleanest looking block daigram of your peers. By default the objects are arranged Left-to-Right, hold Shift to sort Right-to-Left. The Bottom-Left and Bottom-Right terminals take priority when vertically arranging objects. If no diagram objects are selected, this will align the control and indicator terminals to the outer most horizontal terminal positions.
 
-&lt;i&gt;For the VI Scripting Nerds:&lt;/i&gt;
 &lt;b&gt;Ctrl-S: Execute Script&lt;/b&gt; Use the Quick Drop Textbox to execute a series of VI scripts on the selected objects. For example: Ctrl-Space + &lt;b&gt;u16 hb rx&lt;/b&gt; + Ctrl-S = Change to U16, Hide Inc/Dec Buttons, Show Radix in Hex.  Add you own plugins to &lt;b&gt;QuickDrop\plugins\_Script&lt;/b&gt;. I'm getting bored explaining this, just refer to the built-in help: Ctrl-Space + type "help" + Ctrl-S
 
-&lt;i&gt;For Tiny Monitors:&lt;/i&gt;
-&lt;b&gt;Ctrl-E: Resize Diagram Window&lt;/b&gt; Resizes the diagram window to content to minimize waste. WHAT DO WE WANT?!? MORE REALESTATE!
+&lt;b&gt;Ctrl-E: Resize Window&lt;/b&gt; Resizes the panel or diagram window to content to minimize wasted space.
 
-&lt;i&gt;For the Sentient Coder:&lt;/i&gt;
-&lt;b&gt;Ctrl-G: Get Object Info&lt;/b&gt; Displays basic info on the selected panel or diagram object such as Master Bound Rectangle position, class id, class name and class hierarchy, and more... This is usefull if you've ever tried to programatically create VIs using VI Scripting.
-</Description>
+Tools Menu Plugins:
+&lt;b&gt;Tools &gt; Project Properties&lt;/b&gt; Mirrors the Project Explorer tree to display a side-by-side comparison of any VI property for quality assurance purposes. For example, use this tool to help identify which VI's in the active project still contain compiled code ('Contains Compiled Code?') or missing descriptions ('VI Description') or missing help links ('Help:Web URL Link'). See the right-click menus for actions to filter by value or open the VI's to fix.</Description>
       <Copyright/>
       <Packager>Ryan Pacini</Packager>
       <URL>https://github.com/rcpacini/labview_quickdrop</URL>
-      <Release_Notes>v0.2.0: 
-Plugin Shortcuts:
-- Fixed Change to Type ('u8..cxt') to disable "Adapt to Source" on numeric constants
-- Fixed Connect Pane ('c') to wire all controls if nothing is selected
-- Fixed Arrange ('a') to only move terminals horizontally with Shift pressed
-- Fixed Align ('aX') to use Master Bound Rectangle position
-- Renamed shortcuts for hide/show ('hX/sX')
-- Renamed Align horizontal/vertical centers ('ah/av')
-- Renamed Distribute horizontal/vertical centers ('dh/dv')
-- Renamed Selection ('selX')
-- Added Rename Caption ('--c') to rename control caption and hide the label
-- Added Arrange ('a') front panel support to clean up and snap controls to grid, or align by left/top if has selection
-- Added Resize Window ('e') front panel support to resize to controls and reset panel origins
-- Added Snap Panel Grid with Offset ('sgo') to move controls offset to panel origin prior to snap
-- Added VI Voodoo ('vi') to hide inc/dec buttons, snap to grid with offset, reset origin and connect pane
-- Added Hide/Show Scrollbars ('hs/ss')
-- Removed Inline SubVI ('in') shortcut. Note: LV2019 includes right-click menu: "Replace with SubVI Contents..."
-- Removed Align and Snap to Grid ('asg') - Incorporated into Arrange ('a') instead
-
-Panel/Diagram Shortcuts:
-- Renamed change to representation ('u8..cxt')
-- Added array operations ('ad/ar'), enum ('e'), timestamp ('t') and close reference ('cl') shortcuts</Release_Notes>
+      <Release_Notes>v0.3.0: 
+- Removed Get Info ('g') QD Plugin
+- Added 'Tools &gt; Ryans Project Properties' VI property viewer</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -142,32 +120,38 @@ Panel/Diagram Shortcuts:
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>plugins/Script.vi</Path>
-        <Destination>11</Destination>
-        <Additional_Destination>false</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
         <Path>examples/Ryans Quick Drop Example.vit</Path>
         <Destination>1</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>plugins/Resize Window.vi</Path>
+        <Path>plugins/Ryans Arrange.vi</Path>
         <Destination>11</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>plugins/Get Info.vi</Path>
+        <Path>plugins/Ryans Resize Window.vi</Path>
         <Destination>11</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>plugins/Arrange.vi</Path>
+        <Path>plugins/Ryans Script.vi</Path>
         <Destination>11</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>project/_Project Properties</Path>
+        <Destination>7</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>project/Ryans Project Properties.vi</Path>
+        <Destination>7</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
