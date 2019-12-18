@@ -1,10 +1,20 @@
-# Ctrl-S | Execute Script
-Executes a series of VI scripts (i.e. macros) using the Quick Drop textbox arguments (separated by space) on the selected panel or diagram objects. By default, there are a bunch of [Built-in Scripts](#script-built-ins) for common operations, such as: align + distribute objects, connect terminals to pane, change representation, hide/show display objects, etc. <br>
+# `Ctrl-S` = Execute Script
+Executes a series of VI scripts (i.e. macros) using the Quick Drop Textbox
+arguments (separated by space) on the selected panel or diagram objects.
+Many scripts are [Built-in](#script-built-ins) for common operations, such as:
+align + distribute objects, connect terminals to pane, change representation,
+hide/show display objects, etc.
 
 Getting Started: `Ctrl-Space` + type "`help`" + `Ctrl-S`
 
 ## Background
-I quickly realized there aren't enough keys on the keyboard for each Quick Drop Plugin needed. So instead, I created the Execute Script plugin which uses the Quick Drop Textbox to define a series of commands to execute on the selected panel or diagram objects. The plugin includes built-in help and a shortcut configuration dialog (similar to the Quick-Drop Plugins dialog) to manage the shortcuts. Refer to [Custom Plugins](#custom-plugins) for support on how to add your own scripts.
+I quickly realized there aren't enough keys on the keyboard for each Quick
+Drop Plugin needed. So instead, I created the Execute Script plugin which uses
+the Quick Drop Textbox to define a series of commands to execute on the
+selected panel or diagram objects. The plugin includes built-in help and a
+shortcut configuration dialog (similar to the Quick-Drop Plugins dialog) to
+manage the shortcuts. Refer to [Custom Plugins](#custom-plugins) for support
+on how to add your own scripts.
 
 ## Script Built-ins
 The following are Built-in shortcuts supported out of the box.
@@ -67,8 +77,7 @@ The following are Built-in shortcuts supported out of the box.
 | `csg` | Change to CSG |
 | `cdb` | Change to CDB |
 | `cxt` | Change to CXT |
-| `v` | Show Label |
-| `vv` | Hide Label |
+
 
 
 Supports | GObject | Selection
@@ -76,7 +85,9 @@ Supports | GObject | Selection
 ### `aa` = Align Left Edges
 Support: `FP / BD` | GObject: `Any` | Selection: `2+`
 
-Aligns the selected panel or diagram objects by edges or centers. This ignores any display objects (i.e. labels, captions, +/- buttons, index display, etc.) during alignment. Requires 2 or more objects selected.
+Aligns the selected panel or diagram objects by edges or centers.
+This ignores any display objects (i.e. labels, captions, +/- buttons, index
+display, etc.) during alignment. Requires 2 or more objects selected.
 
 ![Built-in Align gif](docs/BuiltinAlign.gif)
 
@@ -98,14 +109,23 @@ See [Align Left Edges](#aa-=-align-left-edges).
 ### `asg` = Align Controls Left and Snap to Grid
 Support: `FP / BD` | GObject: `Any` | Selection: `1+`
 
-Aligns the selected panel or diagram objects by the left edge and if panel focused, snaps each control top-left position to the nearest whole grid size (default is 12 px). This is useful to align Sub VI controls and indicators on the Front Panel.
+Aligns the selected panel or diagram objects by the left edge and if panel
+focused, snaps each control top-left position to the nearest whole grid size
+(default is 12 px). This is useful to align Sub VI controls and indicators on
+the Front Panel.
 
 ![Built-in AlignSnap gif](docs/BuiltinAlignSnap.gif)
 
 ### `c` = Connect Pane
 Support: `FP` | GObject: `Controls` | Selection: `1+`
 
-Connects the selected panel controls or indicators to the VI connector pane.  The controls panel position (top-to-bottom, left-to-right) determine the connector pane order, with the exception of the error in/out controls which are always connected bottom-left and bottom-right connector pane positions respectively. Controls are ignored if there are no available connector pane terminals or if the control is already wired on the connector pane. By default, the input connections are set to `Required`.
+Connects the selected panel controls or indicators to the VI connector pane.
+The controls panel position (top-to-bottom, left-to-right) determine the
+connector pane order, with the exception of the error in/out controls which
+are always connected bottom-left and bottom-right connector pane positions
+respectively. Controls are ignored if there are no available connector pane
+terminals or if the control is already wired on the connector pane. By
+default, the input connections are set to `Required`.
 
 ### `cn` = Cluster Size None
 Support: `FP` | GObject: `Cluster / Cluster Constant` | Selection: `1+`
@@ -115,11 +135,17 @@ Support: `FP` | GObject: `Cluster / Cluster Constant` | Selection: `1+`
 ### `cv` = Cluster Size Vertically
 
 ## Script Plugins
-Create your own script plugins by using the `_Script\Script_Template.vit`. Unlike, Quick Drop plugins which can only have single key shortcuts, Script Plugins can handle more than one key characters specified in the VI Description. The VI Description must include a `[SCRIPT]` configuration section formatted with `shortcut=Short Name` key, value pairs.
+Create your own script plugins by using the `_Script\Script_Template.vit`.
+Unlike, Quick Drop plugins which can only have single key shortcuts, Script
+Plugins can handle more than one key characters specified in the VI
+Description. The VI Description must include a `[SCRIPT]` configuration
+section formatted with `shortcut=Short Name` key, value pairs.
 
 Script Plugin VIs:
-1. Must have the same connector pane as `QuickDrop\plugins\_Script\Script_Template.vit`
-2. Must be placed in the `QuickDrop\plugins\_Script` directory (as a VI or in an LLB)
+1. Must have the same connector pane as
+`QuickDrop\plugins\_Script\Script_Template.vit`
+2. Must be placed in the `QuickDrop\plugins\_Script` directory
+(as a VI or in an LLB)
 3.
 
 ```
@@ -135,8 +161,12 @@ Script Plugin VIs:
 ```
 
 ## Script Plugin Execution
-Here is the order of operations when the Execute Script Quick Drop plugin is called:
-1. Create the default shortcut map all VI Descriptions located in the `QuickDrop\plugins\_Script` directory
-2. Import the `QuickDrop\plugins\_Script\shortcuts.txt` to load the user modified shortcut actions.
-3. Parse the Quick Drop textbox arguments and execute the corresponding vi + argument
+Here is the order of operations when the Execute Script Quick Drop plugin
+is called:
+1. Create the default shortcut map all VI Descriptions located in the
+`QuickDrop\plugins\_Script` directory
+2. Import the `QuickDrop\plugins\_Script\shortcuts.txt` to load the user
+modified shortcut actions.
+3. Parse the Quick Drop textbox arguments and execute the corresponding vi +
+argument
 4. Export any modifications to the `shortcuts.txt`
