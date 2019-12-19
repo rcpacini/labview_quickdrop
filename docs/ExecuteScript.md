@@ -702,6 +702,7 @@ See [Change to U8](#u8--change-to-u8).
 ### `ext` = Change to EXT
 Changes the selected numeric data type representations to Extended 128-bit
 Float (EXT).
+
 See [Change to U8](#u8--change-to-u8).
 
 ### `csg` = Change to CSG
