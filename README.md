@@ -20,18 +20,6 @@ To install, download and run the VI Package (\*.vip) using JKI's
 
 See [releases](releases) to download other versions.
 
-This package installs the Quick Drop Shortcuts to  
-`<LabVIEW>\resource\dialog\QuickDrop\plugins`:
- * `Ryans Arrange.vi` - Arrange Panel or Diagram (**Ctrl-A**)
- * `Ryans Resize Window.vi` - Resize Window (**Ctrl-E**)
- * `Ryans Script.vi` - Execute Script (**Ctrl-S**)
- * `_Script\` - Support VIs
-
-and IDE Plugins to `<LabVIEW>\project`:
- * `Ryans Project Properties.vi` - VI Properties Explorer (**Tools > Ryans
-Project Properties...**)
- * `_Project Properties\` - Support VIs
-
 ---
 
 ## Getting Started
@@ -82,6 +70,18 @@ dependencies are loaded while editing. Save the project.
 To rebuild the VI Package, open the `QuickDrop\RyansQuickDropShortcuts.vipb`
 VI Package Build in VI Package Manager 2019+, edit the package details.
 Press Build to output the VI Package (\*.vip) into the `releases` directory.
+
+This package installs the Quick Drop Shortcuts to  
+`<LabVIEW>\resource\dialog\QuickDrop\plugins`:
+ * `Ryans Arrange.vi` - Arrange Panel or Diagram (**Ctrl-A**)
+ * `Ryans Resize Window.vi` - Resize Window (**Ctrl-E**)
+ * `Ryans Script.vi` - Execute Script (**Ctrl-S**)
+ * `_Script\` - Support VIs
+
+and IDE Plugins to `<LabVIEW>\project`:
+ * `Ryans Project Properties.vi` - VI Properties Explorer (**Tools > Ryans
+Project Properties...**)
+ * `_Project Properties\` - Support VIs
 
 ---
 
