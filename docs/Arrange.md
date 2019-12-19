@@ -108,4 +108,4 @@ Terminal alignment depends on the **number of connected terminals
 If more that one adjacent terminal exists, the following picture defines
 which terminal the object will align to:
 
-![Terminal Prioritization png](terminalpriority.png)
+![Terminal Prioritization png](TerminalPriority.png)
