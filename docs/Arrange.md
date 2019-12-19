@@ -3,7 +3,7 @@ Arrange Panel or Diagram (`Ctrl-A`) cleans up the selected block diagram
 or front panel objects using their position relative to the adjacent object.
 
 There are a few variations depending on the Front Panel (`FP`) or Block Diagram
-(`BD`) focus, if objects are selected (`Objects`), and alternate action
+(`BD`) focus, if objects are selected (`1+`), and alternate action
 (`Shift`).
 
 | Variation | Description |
