@@ -35,7 +35,7 @@ Arrange all controls and indicators to connector pane positions.
 
 **Usage:** `FP` + `Ctrl-Shift-A`
 
-![Arrange to Connector Pane gif](ctrl-a_fp.gif)
+![Arrange to Connector Pane gif](ctrl-a_fp_shift.gif)
 
 ## `FP` + `1+` = Arrange to Left Edge
 Arrange selected objects to the left edge excluding display objects 
@@ -46,7 +46,7 @@ panel grid position.
 
 **Usage:** `FP` + `Select Controls` + `Ctrl-A`
 
-![Arrange to Left Edge gif](ctrl-a_fp.gif)
+![Arrange to Left Edge gif](ctrl-a_fp_1.gif)
 
 ## `FP` + `1+` + `Shift` = Arrange to Top Edge
 Arrange selected objects to the top edge excluding display objects 
@@ -57,7 +57,7 @@ panel grid position.
 
 **Usage:** `FP` + `Select Controls` + `Ctrl-Shift-A`
 
-![Arrange to Top Edge gif](ctrl-a_fp.gif)
+![Arrange to Top Edge gif](ctrl-a_fp_1_shift.gif)
 
 ## `BD` = Arrange Terminals
 Arrange controls and indicators to left and right sides and align terminals
@@ -76,7 +76,7 @@ Arrange controls and indicators to left and right sides only.
 
 **Usage:** `BD` + `Ctrl-Shift-A`
 
-![Arrange Terminals Horizontally Only gif](ctrl-a_bd.gif)
+![Arrange Terminals Horizontally Only gif](ctrl-a_bd_shift.gif)
 
 ## `BD` + `1+` = Arrange to Adjacent Terminal
 Arrange selected object's terminal to the adjacent terminal position sorted
@@ -88,7 +88,7 @@ or bottom to the destination terminal).
 
 **Usage:** `BD` + `Select GObjects` + `Ctrl-A`
 
-![Arrange to Adjacent Terminals gif](ctrl-a_bd.gif)
+![Arrange to Adjacent Terminals gif](ctrl-a_bd_1.gif)
 
 ## `BD` + `1+` + `Shift` = Arrange to Adjacent Terminal Reversed
 Arrange selected objects vertically to the adjacent terminal position sorted
@@ -98,7 +98,7 @@ right-to-left.
 
 **Usage:** `BD` + `Select GObjects` + `Ctrl-Shift-A`
 
-![Arrange to Adjacent Terminals Reversed gif](ctrl-a_bd.gif)
+![Arrange to Adjacent Terminals Reversed gif](ctrl-a_bd_1_shift.gif)
 
 
 # Terminal Prioritization
