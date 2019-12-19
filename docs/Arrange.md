@@ -8,14 +8,14 @@ There are a few variations depending on the Front Panel (`FP`) or Block Diagram
 
 | Variation | Description |
 | --- | --- |
-| `FP` | [Arrange to Grid](#fp-=-arrange-to-grid) |
-| `FP` + `Shift` | [Arrange to Connector Pane](#fp-=-arrange-to-connector-pane) |
-| `FP` + `1+` | [Arrange to Left Edge](#fp--1-=-align-to-left-edge) |
-| `FP` + `1+` + `Shift` | [Arrange to Top Edge](#fp--1--shift-=-align-to-top-edge) |
-| `BD` | [Arrange Terminals](#bd-=-arrange-terminals) |
-| `BD` + `Shift` | [Arrange Terminals Horizontally Only](#bd--shift-=-arrange-terminals-horizontal-only) |
-| `BD` + `1+` | [Arrange to Adjacent Terminal](#bd--1-=-arrange-to-adjacent-terminal) |
-| `BD` + `1+` + `Shift` | [Arrange to Adjacent Terminal Reversed](#bd--1--shift-=-arrange-to-adjacent-terminal-reversed) |
+| `FP` | [Arrange to Grid](#fp--arrange-to-grid) |
+| `FP` + `Shift` | [Arrange to Connector Pane](#fp--shift--arrange-to-connector-pane) |
+| `FP` + `1+` | [Arrange to Left Edge](#fp--1--arrange-to-left-edge) |
+| `FP` + `1+` + `Shift` | [Arrange to Top Edge](#fp--1--shift--arrange-to-top-edge) |
+| `BD` | [Arrange Terminals](#bd--arrange-terminals) |
+| `BD` + `Shift` | [Arrange Terminals Horizontally Only](#bd--shift--arrange-terminals-horizontally-only) |
+| `BD` + `1+` | [Arrange to Adjacent Terminal](#bd--1--arrange-to-adjacent-terminal) |
+| `BD` + `1+` + `Shift` | [Arrange to Adjacent Terminal Reversed](#bd--1--shift--arrange-to-adjacent-terminal-reversed) |
 
 
 ## `FP` = Arrange to Grid
@@ -86,7 +86,7 @@ or bottom to the destination terminal).
 
 ![Arrange to Adjacent Terminals Horizontally Only gif](ctrl-a_bd.gif)
 
-## `BD` + `1+` + `Shift` = Arrange Adjacent Terminal Reversed
+## `BD` + `1+` + `Shift` = Arrange to Adjacent Terminal Reversed
 Arrange selected objects vertically to the adjacent terminal position sorted
 right-to-left.
 
