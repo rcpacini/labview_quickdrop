@@ -58,7 +58,7 @@ VI to replace the Quick Drop Panel & Diagram Shortcuts.
 
 | Tools Menu Plugins | Description |
 | --- | --- |
-| [`Tools > Project Properties...`](docs/ProjectProperties.md) | View VI Properties for the entire Project side-by-side. |
+| `Tools > Project Properties...` | [Project VI Properties Browser](docs/ProjectProperties.md) |
 
 ---
 
