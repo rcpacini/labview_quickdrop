@@ -1,26 +1,28 @@
 # `Ctrl-E` = Resize Diagram
 Resizes the front panel or block diagram window to fit the content.
 
-There are a few variations depending on Front Panel (`FP`) or Block Diagram
-(`BD`) focus, and Alternate action (`Shift`).
+There are variations depending on Front Panel (`FP`) or Block Diagram
+(`BD`) focus.
 
 | Variations | Summary |
 | --- | --- |
-| [FP](#fp--ctrl-e) | Resize the panel window to content and reset the panel origins |
-| [FP + Shift](#fp--shift--ctrl-e) | Resize the panel window to content only |
-| [BD](#bd--ctrl-e) | Resize the diagram window to content |
+| `FP` | [Resize Panel Window](#fp-=-resize-panel-window) |
+| `BD` |  [Resize Diagram Window](#bd-resize-diagram-window)  |
 
-## `FP` + `Ctrl-E`
-Resize the panel window to content and reset the panel origins to (0, 0).
+## `FP` = Resize Panel Window
+Resizes the panel window to content and resets the panel origins to (0, 0).
+
+> **Support:** `FP` | **GObject:** `N/A` | **Selection:** `N/A`
+
+**Usage:** `FP` + `Ctrl-E`
 
 ![Resize Panel gif](ctrl-e_fp.gif)
 
-## `FP` + `Shift` + `Ctrl-E`
-Resize the panel window to content only.
-
-![Resize Panel Alt gif](ctrl-e_fp_shift.gif)
-
-## `BD` + `Ctrl-E`
+## `BD` = Resize Diagram Window
 Resizes the diagram window to content.
+
+> **Support:** `BD` | **GObject:** `N/A` | **Selection:** `N/A`
+
+**Usage:** `BD` + `Ctrl-E`
 
 ![Resize Diagram gif](ctrl-e_bd.gif)

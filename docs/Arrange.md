@@ -6,61 +6,102 @@ There are a few variations depending on the Front Panel (`FP`) or Block Diagram
 (`BD`) focus, if objects are selected (`Objects`), and alternate action
 (`Shift`).
 
-| Variations | Description |
+| Variation | Description |
 | --- | --- |
-| `FP` | [Arrange controls and indicators to grid](#fp--ctrl-a) |
-| `FP` + `Shift` | [Arrange controls and indicators to connector pane position](#fp--shift--ctrl-a) |
-| `FP` + `Objects` | [Align selected to left edge](#fp--objects--ctrl-a) |
-| `FP` + `Objects` + `Shift` | [Align selected to top edge](#fp--objects--shift--ctrl-a) |
-| `BD` | [Arrange terminals](#bd--ctrl-a) |
-| `BD` + `Shift` | [Arrange terminals horizontally only](#bd--shift--ctrl-a) |
-| `BD` + `Objects` | [Arrange selected left-to-right](#bd--objects--ctrl-a) |
-| `BD` + `Objects` + `Shift` | [Arrange selected right-to-left](#bd--objects--shift--ctrl-a) |
+| `FP` | [Arrange to Grid](#fp-=-arrange-to-grid) |
+| `FP` + `Shift` | [Arrange to Connector Pane](#fp-=-arrange-to-connector-pane) |
+| `FP` + `1+` | [Arrange to Left Edge](#fp--1-=-align-to-left-edge) |
+| `FP` + `1+` + `Shift` | [Arrange to Top Edge](#fp--1--shift-=-align-to-top-edge) |
+| `BD` | [Arrange Terminals](#bd-=-arrange-terminals) |
+| `BD` + `Shift` | [Arrange Terminals Horizontally Only](#bd--shift-=-arrange-terminals-horizontal-only) |
+| `BD` + `1+` | [Arrange to Adjacent Terminal](#bd--1-=-arrange-to-adjacent-terminal) |
+| `BD` + `1+` + `Shift` | [Arrange to Adjacent Terminal Reversed](#bd--1--shift-=-arrange-to-adjacent-terminal-reversed) |
 
 
-## `FP` + `Ctrl-A`
+## `FP` = Arrange to Grid
 Arrange all controls and indicators to grid map. Error clusters are
 prioritized to map to the bottom left and bottom right positions. The controls and indicators are offset from the panel origin. The panel origin is reset to (0, 0).
 
-## `FP` + `Shift` + `Ctrl-A`
+> **Support:** `FP` | **GObject:** `N/A` | **Selection:** `N/A`
+
+**Usage:** `FP` + `Ctrl-A`
+
+![Arrange to Grid gif](ctrl-a_fp.gif)
+
+## `FP` + `Shift` = Arrange to Connector Pane
 Arrange all controls and indicators to connector pane positions.
 
-## `FP` + `Objects` + `Ctrl-A`
-Align selected to left edge and snap to nearest grid.
+> **Support:** `FP` | **GObject:** `N/A` | **Selection:** `N/A`
 
-## `FP` + `Objects` + `Shift` + `Ctrl-A`
+**Usage:** `FP` + `Ctrl-Shift-A`
+
+![Arrange to Grid gif](ctrl-a_fp.gif)
+
+## `FP` + `1+` = Arrange to Left Edge
+Align selected to left edge excluding display objects (labels, captions, inc/dec buttons, index displays, etc.) and snap to nearest panel grid position.
+
+> **Support:** `FP` | **GObject:** `Any` | **Selection:** `1+`
+
+**Usage:** `FP` + `Select Controls` + `Ctrl-A`
+
+![Arrange to Left Edge gif](ctrl-a_fp.gif)
+
+## `FP` + `1+` + `Shift` = Arrange to Top Edge
 Align selected to top edge and snap to nearest grid..
 
-## `BD` + `Ctrl-A`
-Align controls and indicators to left and right sides and arrange terminals
-vertically to adjacent object.
+> **Support:** `FP` | **GObject:** `Any` | **Selection:** `1+`
 
-## `BD` + `Shift` + `Ctrl-A`
-Align controls and indicators to left and right sides only.
+**Usage:** `FP` + `Select Controls` + `Ctrl-Shift-A`
 
-## `BD` + `Objects` + `Ctrl-A`
-Arrange selected objects to the adjacent object sorted left-to-right.
+![Arrange to Top Edge gif](ctrl-a_fp.gif)
+
+## `BD` = Arrange Terminals
+Arrange controls and indicators to left and right sides and align terminals
+vertically to adjacent terminal position.
+
+> **Support:** `BD` | **GObject:** `N/A` | **Selection:** `N/A`
+
+**Usage:** `BD` + `Ctrl-A`
+
+![Arrange Terminals gif](ctrl-a_bd.gif)
+
+## `BD` + `Shift` = Arrange Terminals Horizontally Only
+Arrange controls and indicators to left and right sides only.
+
+> **Support:** `BD` | **GObject:** `N/A` | **Selection:** `N/A`
+
+**Usage:** `BD` + `Ctrl-Shift-A`
+
+![Arrange Terminals Horizontally Only gif](ctrl-a_bd.gif)
+
+## `BD` + `1+` = Arrange to Adjacent Terminal
+Arrange selected object's terminal to the adjacent terminal position sorted
+left-to-right.
 Constants are arranged adjacent source terminal position (Centered left, top
 or bottom to the destination terminal).
 
-## `BD` + `Objects` + `Shift` + `Ctrl-A`
-Arrange selected objects to the adjacent object sorted right-to-left.
+> **Support:** `BD` | **GObject:** `Any` | **Selection:** `1+`
+
+**Usage:** `BD` + `Select GObjects` + `Ctrl-A`
+
+![Arrange to Adjacent Terminals Horizontally Only gif](ctrl-a_bd.gif)
+
+## `BD` + `1+` + `Shift` = Arrange Adjacent Terminal Reversed
+Arrange selected objects vertically to the adjacent terminal position sorted
+right-to-left.
+
+> **Support:** `BD` | **GObject:** `Any` | **Selection:** `1+`
+
+**Usage:** `BD` + `Select GObjects` + `Ctrl-A`
+
+![Arrange to Adjacent Terminals Horizontally Only gif](ctrl-a_bd.gif)
 
 
-On the diagram, of the source or destination terminals (left-to-right
-or right-to-left). If nothing is selected, this horizontally aligns the top
-level diagram control and indicator terminals. `Ctrl-Shift-A` reverses the
-order to arrange the diagram (right-to-left). Use these in combination to clean
-up the block diagram quickly.
+# Terminal Prioritization
+Terminal alignment depends on the **number of connected terminals
+(Sinks vs. Sources)** and the **arrange order
+(Left-to-Right vs. Right-to-Left)** wired to the object.
+If more that one adjacent terminal exists, the following picture defines
+which terminal the object will align to:
 
-Object alignment depends on the **number of connected terminals** and the
-**arrange order (Left-to-Right or Right-to-Left)**. If more that one terminal
-is connected, the following defines which terminal used to align:
-
-| # Ins | # Outs | `Ctrl=-A` (L2R) | `Ctrl-Shift-A` (R2L) |
-| --- | --- | --- | --- |
-| 1+ | 0 | Bottom-Left Input | Top-Left Input |
-| 0 | 1+ | Bottom-Right Output | Top-Right Output |
-| 1+ | 1+ | Bottom-Left Input | Bottom-Right Output |
-
-![Arrange Diagram gif](docs/ArrangeDiagram.gif)
+![Terminal Prioritization png](terminalpriority.png)
