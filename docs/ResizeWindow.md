@@ -1,4 +1,4 @@
-# `Ctrl-E` = Resize Diagram
+# `Ctrl-E` = Resize Window
 Resizes the front panel or block diagram window to fit the content.
 
 There are variations depending on Front Panel (`FP`) or Block Diagram
