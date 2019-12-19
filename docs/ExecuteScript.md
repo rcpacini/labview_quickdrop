@@ -24,6 +24,8 @@ Quick Drop Plugins dialog) to manage custom shortcuts. Refer to
 [Custom Shortcuts and Plugins](#custom-shortcuts-and-plugins)
 for support on how to add your own shortcuts and script plugins.
 
+---
+
 ## Built-in Shortcuts
 The following built-in shortcuts are supported out of the box. Shortcuts that
 start with `--` return the remaining arguments to the plugin which are
@@ -31,70 +33,70 @@ typically used to set labels, captions or pass parameters.
 
 | Shortcut | Name |
 | --- | --- |
-| `--` | [Rename Label](#---=-rename-label) |
-| `--c` | [Rename Caption](#--c-=-rename-caption) |
-| `--icon` | [Edit VI Icon](#--icon-=-edit-vi-icon) |
-| `0` | [Open in File Explore](#0-=-open-in-file-explore) |
-| `a` | [Arrange](#a-=-arrange) |
-| `aa` | [Align Left Edges](#aa-=-align-left-edges) |
-| `ad` | [Align Right Edges](#ad-=-align-right-edges) |
-| `ah` | [Align Horizontal Centers](#ah-=-align-horizontal-centers) |
-| `as` | [Align Bottom Edges](#as-=-align-bottom-edges) |
-| `av` | [Align Vertical Centers](#av-=-align-vertical-centers) |
-| `aw` | [Align Top Edges](#aw-=-align-top-edges) |
-| `c` | [Connect Pane](#c-=-connect-pane) |
-| `cf` | [Cluster Size Fit](#cf-=-cluster-size-fit) |
-| `ch` | [Cluster Size Horizontally](#ch-=-cluster-size-horizontally) |
-| `cn` | [Cluster Size None](#cn-=-cluster-size-none) |
-| `cv` | [Cluster Size Vertically](#cv-=-cluster-size-vertically) |
-| `d` | [Distribute Vertical Compress](#d-=-distribute-vertical-compress) |
-| `da` | [Distribute Left Edges](#da-=-distribute-left-edges) |
-| `dd` | [Distribute Right Edges](#dd-=-distribute-right-edges) |
-| `df` | [Distribute Horizontal Compress ](#df-=-distribute-horizontal-compress) |
-| `dh` | [Distribute Horizontal Centers](#dh-=-distribute-horizontal-centers) |
-| `dhg` | [Distribute Horizontal Gap](#dhg-=-distribute-horizontal-gap) |
-| `ds` | [Distribute Bottom Edges](#ds-=-distribute-bottom-edges) |
-| `dv` | [Distribute Vertical Centers](#dv-=-distribute-vertical-centers) |
-| `dvg` | [Distribute Vertical Gap](#dvg-=-distribute-vertical-gap) |
-| `dw` | [Distribute Top Edges](#dw-=-distribute-top-edges) |
-| `e` | [Resizes Window](#e-=-resizes-window) |
-| `er` | [Error Structure](#er-=-error-Structure) |
-| `hb` | [Hide Inc/Dec Buttons](#hb-=-hide-incdec-buttons) |
-| `hc` | [Hide Caption](#hc-=-hide-caption) |
-| `hi` | [Hide Index Display](#hi-=-hide-index-display) |
-| `hl` | [Hide Label](#hl-=-hide-label) |
-| `hr` | [Hide Radix](#hr-=-hide-radix) |
-| `hs` | [Hide Scrollbars](#hs-=-hide-scrollbars) |
-| `m` | [Merge Icon Layers](#m-=-merge-icon-layers) |
-| `o` | [Reset Panel Origins](#o-=-reset-panel-origins) |
-| `rb` | [Radix Binary or Backslash](#rb-=-radix-binary-or-backslash) |
-| `rd` | [Radix Decimal or Normal](#rd-=-radix-decimal-or-normal) |
-| `rx` | [Radix Hex](#rx-=-radix-hex) |
-| `sb` | [Show Inc/Dec Buttons](#sb-=-show-incdec-buttons) |
-| `sc` | [Show Caption](#sc-=-show-caption) |
-| `si` | [Show Index Display](#si-=-show-index-display) |
-| `sl` | [Show Label](#sl-=-show-label) |
-| `ss` | [Show Scrollbars](#ss-=-show-scrollbars) |
-| `sel` | [Select Controls and Indicators](#sel-=-select-controls-and-indicators) |
-| `selc` | [Select Controls](#selc-=-select-controls) |
-| `seli` | [Select Indicators](#seli-=-select-indicators) |
-| `seln` | [Select None](#seln-=-select-none) |
-| `sg` | [Snap to Panel Grid](#sg-=-snap-to-panel-grid) |
-| `u8` | [Change to U8](#u8-=-change-to-u8) |
-| `u16` | [Change to U16](#u16-=-change-to-u16) |
-| `u32` | [Change to U32](#u32-=-change-to-u32) |
-| `u64` | [Change to U64](#u64-=-change-to-u64) |
-| `i8` | [Change to I8](#i8-=-change-to-i8) |
-| `i16` | [Change to I16](#i16-=-change-to-i16) |
-| `i32` | [Change to I32](#i32-=-change-to-i32) |
-| `i64` | [Change to I64](#i64-=-change-to-i64) |
-| `sgl` | [Change to SGL](#sgl-=-change-to-sgl) |
-| `dbl` | [Change to DBL](#dbl-=-change-to-dbl) |
-| `ext` | [Change to EXT](#ext-=-change-to-ext) |
-| `csg` | [Change to CSG](#csg-=-change-to-csg) |
-| `cdb` | [Change to CDB](#cdb-=-change-to-cdb) |
-| `cxt` | [Change to CXT](#cxt-=-change-to-cxt) |
-| `vi` | [VI Voodoo](#vi-=-vi-voodoo) |
+| `--` | [Rename Label](#----rename-label) |
+| `--c` | [Rename Caption](#--c--rename-caption) |
+| `--icon` | [Edit VI Icon](#--icon--edit-vi-icon) |
+| `0` | [Open in File Explore](#0--open-in-file-explore) |
+| `a` | [Arrange](#a--arrange) |
+| `aa` | [Align Left Edges](#aa--align-left-edges) |
+| `ad` | [Align Right Edges](#ad--align-right-edges) |
+| `ah` | [Align Horizontal Centers](#ah--align-horizontal-centers) |
+| `as` | [Align Bottom Edges](#as--align-bottom-edges) |
+| `av` | [Align Vertical Centers](#av--align-vertical-centers) |
+| `aw` | [Align Top Edges](#aw--align-top-edges) |
+| `c` | [Connect Pane](#c--connect-pane) |
+| `cf` | [Cluster Size Fit](#cf--cluster-size-fit) |
+| `ch` | [Cluster Size Horizontally](#ch--cluster-size-horizontally) |
+| `cn` | [Cluster Size None](#cn--cluster-size-none) |
+| `cv` | [Cluster Size Vertically](#cv--cluster-size-vertically) |
+| `d` | [Distribute Vertical Compress](#d--distribute-vertical-compress) |
+| `da` | [Distribute Left Edges](#da--distribute-left-edges) |
+| `dd` | [Distribute Right Edges](#dd--distribute-right-edges) |
+| `df` | [Distribute Horizontal Compress ](#df--distribute-horizontal-compress) |
+| `dh` | [Distribute Horizontal Centers](#dh--distribute-horizontal-centers) |
+| `dhg` | [Distribute Horizontal Gap](#dhg--distribute-horizontal-gap) |
+| `ds` | [Distribute Bottom Edges](#ds--distribute-bottom-edges) |
+| `dv` | [Distribute Vertical Centers](#dv--distribute-vertical-centers) |
+| `dvg` | [Distribute Vertical Gap](#dvg--distribute-vertical-gap) |
+| `dw` | [Distribute Top Edges](#dw--distribute-top-edges) |
+| `e` | [Resizes Window](#e--resizes-window) |
+| `er` | [Error Structure](#er--error-structure) |
+| `hb` | [Hide Inc/Dec Buttons](#hb--hide-incdec-buttons) |
+| `hc` | [Hide Caption](#hc--hide-caption) |
+| `hi` | [Hide Index Display](#hi--hide-index-display) |
+| `hl` | [Hide Label](#hl--hide-label) |
+| `hr` | [Hide Radix](#hr--hide-radix) |
+| `hs` | [Hide Scrollbars](#hs--hide-scrollbars) |
+| `m` | [Merge Icon Layers](#m--merge-icon-layers) |
+| `o` | [Reset Panel Origins](#o--reset-panel-origins) |
+| `rb` | [Radix Binary or Backslash](#rb--radix-binary-or-backslash) |
+| `rd` | [Radix Decimal or Normal](#rd--radix-decimal-or-normal) |
+| `rx` | [Radix Hex](#rx--radix-hex) |
+| `sb` | [Show Inc/Dec Buttons](#sb--show-incdec-buttons) |
+| `sc` | [Show Caption](#sc--show-caption) |
+| `si` | [Show Index Display](#si--show-index-display) |
+| `sl` | [Show Label](#sl--show-label) |
+| `ss` | [Show Scrollbars](#ss--show-scrollbars) |
+| `sel` | [Select Controls and Indicators](#sel--select-controls-and-indicators) |
+| `selc` | [Select Controls](#selc--select-controls) |
+| `seli` | [Select Indicators](#seli--select-indicators) |
+| `seln` | [Select None](#seln--select-none) |
+| `sg` | [Snap to Panel Grid](#sg--snap-to-panel-grid) |
+| `u8` | [Change to U8](#u8--change-to-u8) |
+| `u16` | [Change to U16](#u16--change-to-u16) |
+| `u32` | [Change to U32](#u32--change-to-u32) |
+| `u64` | [Change to U64](#u64--change-to-u64) |
+| `i8` | [Change to I8](#i8--change-to-i8) |
+| `i16` | [Change to I16](#i16--change-to-i16) |
+| `i32` | [Change to I32](#i32--change-to-i32) |
+| `i64` | [Change to I64](#i64--change-to-i64) |
+| `sgl` | [Change to SGL](#sgl--change-to-sgl) |
+| `dbl` | [Change to DBL](#dbl--change-to-dbl) |
+| `ext` | [Change to EXT](#ext--change-to-ext) |
+| `csg` | [Change to CSG](#csg--change-to-csg) |
+| `cdb` | [Change to CDB](#cdb--change-to-cdb) |
+| `cxt` | [Change to CXT](#cxt--change-to-cxt) |
+| `vi` | [VI Voodoo](#vi--vi-voodoo) |
 
 ---
 
