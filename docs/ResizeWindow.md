@@ -6,8 +6,8 @@ There are variations depending on Front Panel (`FP`) or Block Diagram
 
 | Variations | Summary |
 | --- | --- |
-| `FP` | [Resize Panel Window](#fp-=-resize-panel-window) |
-| `BD` |  [Resize Diagram Window](#bd-resize-diagram-window)  |
+| `FP` | [Resize Panel Window](#fp--resize-panel-window) |
+| `BD` |  [Resize Diagram Window](#bd--resize-diagram-window)  |
 
 ## `FP` = Resize Panel Window
 Resizes the panel window to content and resets the panel origins to (0, 0).
