@@ -38,7 +38,9 @@ Arrange all controls and indicators to connector pane positions.
 ![Arrange to Grid gif](ctrl-a_fp.gif)
 
 ## `FP` + `1+` = Arrange to Left Edge
-Align selected to left edge excluding display objects (labels, captions, inc/dec buttons, index displays, etc.) and snap to nearest panel grid position.
+Arrange selected objects to the left edge excluding display objects 
+(labels, captions, inc/dec buttons, index displays, etc.) and snap to nearest 
+panel grid position.
 
 > **Support:** `FP` | **GObject:** `Any` | **Selection:** `1+`
 
@@ -47,7 +49,9 @@ Align selected to left edge excluding display objects (labels, captions, inc/dec
 ![Arrange to Left Edge gif](ctrl-a_fp.gif)
 
 ## `FP` + `1+` + `Shift` = Arrange to Top Edge
-Align selected to top edge and snap to nearest grid..
+Arrange selected objects to the top edge excluding display objects 
+(labels, captions, inc/dec buttons, index displays, etc.) and snap to nearest 
+panel grid position.
 
 > **Support:** `FP` | **GObject:** `Any` | **Selection:** `1+`
 
