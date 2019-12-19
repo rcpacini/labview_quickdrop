@@ -17,6 +17,7 @@ There are a few variations depending on the Front Panel (`FP`) or Block Diagram
 | `BD` + `1+` | [Arrange to Adjacent Terminal](#bd--1--arrange-to-adjacent-terminal) |
 | `BD` + `1+` + `Shift` | [Arrange to Adjacent Terminal Reversed](#bd--1--shift--arrange-to-adjacent-terminal-reversed) |
 
+---
 
 ## `FP` = Arrange to Grid
 Arrange all controls and indicators to grid map. Error clusters are
@@ -28,6 +29,8 @@ prioritized to map to the bottom left and bottom right positions. The controls a
 
 ![Arrange to Grid gif](ctrl-a_fp.gif)
 
+---
+
 ## `FP` + `Shift` = Arrange to Connector Pane
 Arrange all controls and indicators to connector pane positions.
 
@@ -36,6 +39,8 @@ Arrange all controls and indicators to connector pane positions.
 **Usage:** `FP` + `Ctrl-Shift-A`
 
 ![Arrange to Connector Pane gif](ctrl-a_fp_shift.gif)
+
+---
 
 ## `FP` + `1+` = Arrange to Left Edge
 Arrange selected objects to the left edge excluding display objects 
@@ -48,6 +53,8 @@ panel grid position.
 
 ![Arrange to Left Edge gif](ctrl-a_fp_1.gif)
 
+---
+
 ## `FP` + `1+` + `Shift` = Arrange to Top Edge
 Arrange selected objects to the top edge excluding display objects 
 (labels, captions, inc/dec buttons, index displays, etc.) and snap to nearest 
@@ -59,6 +66,8 @@ panel grid position.
 
 ![Arrange to Top Edge gif](ctrl-a_fp_1_shift.gif)
 
+---
+
 ## `BD` = Arrange Terminals
 Arrange controls and indicators to left and right sides and align terminals
 vertically to adjacent terminal position.
@@ -69,6 +78,8 @@ vertically to adjacent terminal position.
 
 ![Arrange Terminals gif](ctrl-a_bd.gif)
 
+---
+
 ## `BD` + `Shift` = Arrange Terminals Horizontally Only
 Arrange controls and indicators to left and right sides only.
 
@@ -77,6 +88,8 @@ Arrange controls and indicators to left and right sides only.
 **Usage:** `BD` + `Ctrl-Shift-A`
 
 ![Arrange Terminals Horizontally Only gif](ctrl-a_bd_shift.gif)
+
+---
 
 ## `BD` + `1+` = Arrange to Adjacent Terminal
 Arrange selected object's terminal to the adjacent terminal position sorted
@@ -90,6 +103,8 @@ or bottom to the destination terminal).
 
 ![Arrange to Adjacent Terminals gif](ctrl-a_bd_1.gif)
 
+---
+
 ## `BD` + `1+` + `Shift` = Arrange to Adjacent Terminal Reversed
 Arrange selected objects vertically to the adjacent terminal position sorted
 right-to-left.
@@ -100,6 +115,7 @@ right-to-left.
 
 ![Arrange to Adjacent Terminals Reversed gif](ctrl-a_bd_1_shift.gif)
 
+---
 
 # Terminal Prioritization
 Terminal alignment depends on the **number of connected terminals
