@@ -208,19 +208,19 @@ display objects).*
 ![Arrange gif](ctrl-s_aa.gif)
 
 ### `ad` = Align Right Edges
-See [Align Left Edges](#aa-=-align-left-edges).
+See [Align Left Edges](#aa--align-left-edges).
 
 ### `ah` = Align Horizontal Centers
-See [Align Left Edges](#aa-=-align-left-edges).
+See [Align Left Edges](#aa--align-left-edges).
 
 ### `as` = Align Bottom Edges
-See [Align Left Edges](#aa-=-align-left-edges).
+See [Align Left Edges](#aa--align-left-edges).
 
 ### `av` = Align Vertical Centers
-See [Align Left Edges](#aa-=-align-left-edges).
+See [Align Left Edges](#aa--align-left-edges).
 
 ### `aw` = Align Top Edges
-See [Align Left Edges](#aa-=-align-left-edges).
+See [Align Left Edges](#aa--align-left-edges).
 
 ---
 
@@ -257,13 +257,13 @@ Horizontally' or 'Arrange Vertically'.
 ![Cluster Size Vertically gif](ctrl-s_cv.gif)
 
 ### `ch` = Cluster Size Horizontally
-See [Cluster Size Fit](#cf-=-cluster-size-fit).
+See [Cluster Size Fit](#cf--cluster-size-fit).
 
 ### `cn` = Cluster Size None
-See [Cluster Size Fit](#cf-=-cluster-size-fit).
+See [Cluster Size Fit](#cf--cluster-size-fit).
 
 ### `cv` = Cluster Size Vertically
-See [Cluster Size Fit](#cf-=-cluster-size-fit).
+See [Cluster Size Fit](#cf--cluster-size-fit).
 
 ---
 
@@ -282,31 +282,31 @@ corresponding LabVIEW Distribute Tool.
 ![Distribute Vertical Compress gif](ctrl-s_d.gif)
 
 ### `da` = Distribute Left Edges
-See [Distribute Vertical Compress](#d-=-distribute-vertical-compress).
+See [Distribute Vertical Compress](#d--distribute-vertical-compress).
 
 ### `dd` = Distribute Right Edges
-See [Distribute Vertical Compress](#d-=-distribute-vertical-compress).
+See [Distribute Vertical Compress](#d--distribute-vertical-compress).
 
 ### `df` = Distribute Horizontal Compress
-See [Distribute Vertical Compress](#d-=-distribute-vertical-compress).
+See [Distribute Vertical Compress](#d--distribute-vertical-compress).
 
 ### `dh` = Distribute Horizontal Centers
-See [Distribute Vertical Compress](#d-=-distribute-vertical-compress).
+See [Distribute Vertical Compress](#d--distribute-vertical-compress).
 
 ### `dhg` = Distribute Horizontal Gap
-See [Distribute Vertical Compress](#d-=-distribute-vertical-compress).
+See [Distribute Vertical Compress](#d--distribute-vertical-compress).
 
 ### `ds` = Distribute Bottom Edges
-See [Distribute Vertical Compress](#d-=-distribute-vertical-compress).
+See [Distribute Vertical Compress](#d--distribute-vertical-compress).
 
 ### `dv` = Distribute Vertical Centers
-See [Distribute Vertical Compress](#d-=-distribute-vertical-compress).
+See [Distribute Vertical Compress](#d--distribute-vertical-compress).
 
 ### `dvg` = Distribute Vertical Gap
-See [Distribute Vertical Compress](#d-=-distribute-vertical-compress).
+See [Distribute Vertical Compress](#d--distribute-vertical-compress).
 
 ### `dw` = Distribute Top Edges
-See [Distribute Vertical Compress](#d-=-distribute-vertical-compress).
+See [Distribute Vertical Compress](#d--distribute-vertical-compress).
 
 ---
 
@@ -352,7 +352,7 @@ structure.
 Hides the increment / decrement buttons on the selected numerics if they exist.
 <br>*LV2019 Bug: Timestamps do not have a property node to hide the inc/dec
 buttons.*
-<br>**Related:** [Show Inc/Dec Buttons](#sb-=-show-incdec-buttons).
+<br>**Related:** [Show Inc/Dec Buttons](#sb--show-incdec-buttons).
 
 > **Support:** `FP` | **GObject:** `Numerics` | **Selection:** `1+`
 
@@ -369,57 +369,57 @@ Hides the captions on the selected controls.
 reference is accessed. This means the caption is not destroyed when hidden.
 As of LV2019, the only method to destroy a caption is manually through the
 control's property menu.**
-<br>**Related:** [Show Caption](#sc-=-show-caption).
+<br>**Related:** [Show Caption](#sc--show-caption).
 
 > **Support:** `FP` | **GObject:** `Controls` | **Selection:** `1+`
 
 **Usage:** `hc` + `Ctrl-S`
 
-**Example:** See [Hide Inc/Dec Buttons](#hb-=-hide-incdec-buttons).
+**Example:** See [Hide Inc/Dec Buttons](#hb--hide-incdec-buttons).
 
 ### `hi` = Hide Index Display
 Hides the index displays on the selected arrays if they exist.
-<br>**Related:** [Show Index Display](#si-=-show-index-display).
+<br>**Related:** [Show Index Display](#si--show-index-display).
 
 > **Support:** `FP | BD` | **GObject:** `Arrays | Array Constants` |
 **Selection:** `1+`
 
 **Usage:** `hi` + `Ctrl-S`
 
-**Example:** See [Hide Inc/Dec Buttons](#hb-=-hide-incdec-buttons).
+**Example:** See [Hide Inc/Dec Buttons](#hb--hide-incdec-buttons).
 
 ### `hl` = Hide Label
 Hides the labels on the selected objects if they exist.
-<br>**Related:** [Show Label](#sl-=-show-label).
+<br>**Related:** [Show Label](#sl--show-label).
 
 > **Support:** `FP | BD` | **GObject:** `Objects with labels` | **Selection:**
 `1+`
 
 **Usage:** `hl` + `Ctrl-S`
 
-**Example:** See [Hide Inc/Dec Buttons](#hb-=-hide-incdec-buttons).
+**Example:** See [Hide Inc/Dec Buttons](#hb--hide-incdec-buttons).
 
 ### `hr` = Hide Radix
 Hides the radix display on the selected numerics or strings if they exist.
-<br>**Related:** [Radix Binary or Backslash](#rb-=-radix-binary-or-backslash).
+<br>**Related:** [Radix Binary or Backslash](#rb--radix-binary-or-backslash).
 
 > **Support:** `FP | BD` | **GObject:** `Numerics with radix | Strings with
 radix` | **Selection:** `1+`
 
 **Usage:** `hr` + `Ctrl-S`
 
-**Example:** See [Hide Inc/Dec Buttons](#hb-=-hide-incdec-buttons).
+**Example:** See [Hide Inc/Dec Buttons](#hb--hide-incdec-buttons).
 
 ### `hs` = Hide Scrollbars
 Hides the scrollbars on the selected controls with scrollbars if they exist.
-<br>**Related:** [Show Scrollbars](#ss-=-show-scrollbars).
+<br>**Related:** [Show Scrollbars](#ss--show-scrollbars).
 
 > **Support:** `FP | BD` | **GObject:** `Objects with scrollbars` |
 **Selection:** `1+`
 
 **Usage:** `hs` + `Ctrl-S`
 
-**Example:** See [Hide Inc/Dec Buttons](#hb-=-hide-incdec-buttons).
+**Example:** See [Hide Inc/Dec Buttons](#hb--hide-incdec-buttons).
 
 ---
 
@@ -459,8 +459,8 @@ or strings if they exist. For numerics, this will also format the display
 string according to the bit size (e.g. U16 = `"%016b"` = `0000000000001010`).
 <br>*Note: Float, Complex, Ring, Enum numeric types do not support binary
 radix displays and revert to
-[Radix Deciaml or Normal](#rd-=-radix-decimal-or-normal).*
-<br>**Related:** [Hide Radix](#hr-=-hide-radix).
+[Radix Deciaml or Normal](#rd--radix-decimal-or-normal).*
+<br>**Related:** [Hide Radix](#hr--hide-radix).
 
 > **Support:** `FP | BD` | **GObject:** `Numerics | Numeric Constants |
 Strings | String Constants` | **Selection:** `1+`
@@ -478,14 +478,14 @@ Shows the radix display in decimal (or normal) on the selected numerics
 or strings if they exist. For numerics, this will also format the display
 string according to the data type (e.g. Integers/Unsigned-Integers = `"%d"`,
 Floats/Complex = `"%#g"`).
-<br>**Related:** [Hide Radix](#hr-=-hide-radix).
+<br>**Related:** [Hide Radix](#hr--hide-radix).
 
 > **Support:** `FP | BD` | **GObject:** `Numerics | Numeric Constants |
 Strings | String Constants` | **Selection:** `1+`
 
 **Usage:** `rb` + `Ctrl-S`
 
-**Example:** See [Radix Binary or Backslash](#rb-=-radix-binary-or-backslash).
+**Example:** See [Radix Binary or Backslash](#rb--radix-binary-or-backslash).
 
 ### `rx` = Radix Hex
 Shows the radix display in hex on the selected numerics or strings if they
@@ -493,15 +493,15 @@ exist. For numerics, this will also format the display string according to the
 data type (e.g. U16 = `"%04x"` = `FFFF`).
 <br>*Note: Float, Complex, Ring, Enum numeric types do not support hex
 radix displays and revert to
-[Radix Deciaml or Normal](#rd-=-radix-decimal-or-normal).*
-<br>**Related:** [Hide Radix](#hr-=-hide-radix).
+[Radix Deciaml or Normal](#rd--radix-decimal-or-normal).*
+<br>**Related:** [Hide Radix](#hr--hide-radix).
 
 > **Support:** `FP | BD` | **GObject:** `Numerics | Numeric Constants |
 Strings | String Constants` | **Selection:** `1+`
 
 **Usage:** `rx` + `Ctrl-S`
 
-**Example:** See [Radix Binary or Backslash](#rb-=-radix-binary-or-backslash).
+**Example:** See [Radix Binary or Backslash](#rb--radix-binary-or-backslash).
 
 ---
 
@@ -509,7 +509,7 @@ Strings | String Constants` | **Selection:** `1+`
 Shows the increment / decrement buttons on the selected numerics if they exist.
 <br>*LV2019 Bug: Timestamps do not have a property node to show the inc/dec
 buttons.*
-<br>**Related:** [Hide Inc/Dec Buttons](#hb-=-hide-incdec-buttons).
+<br>**Related:** [Hide Inc/Dec Buttons](#hb--hide-incdec-buttons).
 
 > **Support:** `FP` | **GObject:** `Numerics` | **Selection:** `1+`
 
@@ -523,46 +523,46 @@ buttons.*
 ### `sc` = Show Caption
 Shows the captions on the selected controls. If the caption is empty, the
 label is used, if the label is empty a "Caption" placeholder is created.
-<br>**Related:** [Hide Caption](#hc-=-hide-caption).
+<br>**Related:** [Hide Caption](#hc--hide-caption).
 
 > **Support:** `FP` | **GObject:** `Controls` | **Selection:** `1+`
 
 **Usage:** `sc` + `Ctrl-S`
 
-**Example:** See [Show Inc/Dec Buttons](#sb-=-show-incdec-buttons).
+**Example:** See [Show Inc/Dec Buttons](#sb--show-incdec-buttons).
 
 ### `si` = Show Index Display
 Shows the index displays on the selected arrays if they exist.
-<br>**Related:** [Hide Index Display](#hi-=-hide-index-display).
+<br>**Related:** [Hide Index Display](#hi--hide-index-display).
 
 > **Support:** `FP | BD` | **GObject:** `Arrays | Array Constants` |
 **Selection:** `1+`
 
 **Usage:** `si` + `Ctrl-S`
 
-**Example:** See [Show Inc/Dec Buttons](#sb-=-show-incdec-buttons).
+**Example:** See [Show Inc/Dec Buttons](#sb--show-incdec-buttons).
 
 ### `sl` = Show Label
 Shows the labels on the selected objects if they exist.
-<br>**Related:** [Hide Label](#hl-=-hide-label).
+<br>**Related:** [Hide Label](#hl--hide-label).
 
 > **Support:** `FP | BD` | **GObject:** `Objects with labels` | **Selection:**
 `1+`
 
 **Usage:** `sl` + `Ctrl-S`
 
-**Example:** See [Show Inc/Dec Buttons](#sb-=-show-incdec-buttons).
+**Example:** See [Show Inc/Dec Buttons](#sb--show-incdec-buttons).
 
 ### `ss` = Show Scrollbars
 Shows the scrollbars on the selected objects with scrollbars if they exist.
-<br>**Related:** [Hide Scrollbars](#hs-=-hide-scrollbars).
+<br>**Related:** [Hide Scrollbars](#hs--hide-scrollbars).
 
 > **Support:** `FP | BD` | **GObject:** `Objects with scrollbars` |
 **Selection:** `1+`
 
 **Usage:** `ss` + `Ctrl-S`
 
-**Example:** See [Show Inc/Dec Buttons](#sb-=-show-incdec-buttons).
+**Example:** See [Show Inc/Dec Buttons](#sb--show-incdec-buttons).
 
 ---
 
@@ -588,7 +588,7 @@ Selects all controls on the panel or diagram.
 **Usage:** `selc` + `Ctrl-S`
 
 **Example:** See
-[Select Controls and Indicators](#sel-=-select-controls-and-indicators)
+[Select Controls and Indicators](#sel--select-controls-and-indicators)
 
 ### `seli` = Select Indicators
 Selects all indicators on the panel or diagram.
@@ -599,7 +599,7 @@ Selects all indicators on the panel or diagram.
 **Usage:** `seli` + `Ctrl-S`
 
 **Example:** See
-[Select Controls and Indicators](#sel-=-select-controls-and-indicators)
+[Select Controls and Indicators](#sel--select-controls-and-indicators)
 
 ### `seln` = Select None
 Clears the selection list on the panel or diagram.
@@ -609,7 +609,7 @@ Clears the selection list on the panel or diagram.
 **Usage:** `seln` + `Ctrl-S`
 
 **Example:** See
-[Select Controls and Indicators](#sel-=-select-controls-and-indicators)
+[Select Controls and Indicators](#sel--select-controls-and-indicators)
 
 ---
 
@@ -649,78 +649,78 @@ Integer (U8).
 Changes the selected numeric data type representations to Unsigned 16-bit
 Integer (U16).
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `u32` = Change to U32
 Changes the selected numeric data type representations to Unsigned 32-bit
 Integer (U32).
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `u64` = Change to U64
 Changes the selected numeric data type representations to Unsigned 64-bit
 Integer (U64).
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `i8` = Change to I8
 Changes the selected numeric data type representations to Signed 8-bit
 Integer (I8).
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `i16` = Change to I16
 Changes the selected numeric data type representations to Signed 16-bit
 Integer (I16).
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `i32` = Change to I32
 Changes the selected numeric data type representations to Signed 32-bit
 Integer (I32).
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `i64` = Change to I64
 Changes the selected numeric data type representations to Signed 64-bit
 Integer (I64).
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `sgl` = Change to SGL
 Changes the selected numeric data type representations to Single 32-bit
 Float (SGL).
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `dbl` = Change to DBL
 Changes the selected numeric data type representations to Double 64-bit
 Float (DBL).
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `ext` = Change to EXT
 Changes the selected numeric data type representations to Extended 128-bit
 Float (EXT).
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `csg` = Change to CSG
 Changes the selected numeric data type representations to Single Complex
 Float (CSG) where the total size is 64-bit = 32-bit Real + 32-bit Imaginary.
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `cdb` = Change to CDB
 Changes the selected numeric data type representations to Double Complex
 Float (CDB) where the total size is 128-bit = 64-bit Real + 64-bit Imaginary.
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ### `cxt` = Change to CXT
 Changes the selected numeric data type representations to Extended Complex
 Float (CXT) where the total size is 256-bit = 128-bit Real + 128-bit Imaginary.
 
-See [Change to U8](#u8-=-change-to-u8).
+See [Change to U8](#u8--change-to-u8).
 
 ---
 
