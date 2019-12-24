@@ -153,3 +153,5 @@ Colors can be a hex number `#RRGGBB` or the following color names:
 | `yellow3` | `#CCCC00` | 204, 204, 0 |
 | `yellow4` | `#999900` | 153, 153, 0 |
 | `yellowgreen` | `#99CC33` | 153, 204, 51 |
+
+---

@@ -5,9 +5,9 @@ Many scripts are [Built-in](#built-in-shortcuts) for common operations,
 such as: align + distribute objects, connect terminals to pane, change
 representation, hide/show display objects, etc.
 
-**Getting Started:** `Ctrl-Space` + **`"help"`** + `Ctrl-S`
+**See Help:** `Ctrl-Space` + **`"help"`** + `Ctrl-S`
 
-![Help gif](ctrl-s_help.gif)
+![Help gif](imgs/ctrl-s_help.gif)
 
 ## Background
 I quickly realized there aren't enough keys on the keyboard for each Quick
@@ -109,9 +109,9 @@ Renames the selected object's label.
 **Usage:** `-- LABEL` + `Ctrl-S`
 
 **Example:** `FP` + `Select Control` + `Ctrl-Space` +
-**`"-- My New Label"`** + `Ctrl-S`
+**`"-- Hello World"`** + `Ctrl-S`
 
-![Rename Label gif](ctrl-s_--.gif)
+![Rename Label gif](imgs/ctrl-s_--.gif)
 
 ---
 
@@ -122,16 +122,16 @@ Renames the selected control's caption and hides the label if visible.
 
 **Usage:** `--c CAPTION` + `Ctrl-S`
 
-**Example:** `FP` + `Select Control` + `Ctrl-Space` + **`"--c My New
+**Example:** `FP` + `Select Control` + `Ctrl-Space` + **`"--c My
 Caption"`** + `Ctrl-S`
 
-![Rename Caption gif](ctrl-s_--c.gif)
+![Rename Caption gif](imgs/ctrl-s_--c.gif)
 
 ---
 
 ### `--icon` = Edit VI Icon
-Edits the VI icon. Refer to the [Color Names](ColorNames.md) page to see
-supported color names.
+Edits the VI icon from the following options below.<br>
+**Warning: This flattens the VI icon.**
 
 > **Support:** `FP | BD` | **GObject:** `N/A` | **Selection:** `N/A`
 
@@ -156,9 +156,12 @@ supported color names.
 * `-tj TEXT_JUSTIFY` = Icon text justification as [`center`|`left`|`right`]
   (`center`)
 
+Refer to the [Color Names](ColorNames.md) page to see
+supported color names.
+
 **Example:** `FP` + `Ctrl-Space` + **`"--icon READ ID -h DRIVER -hc skyblue -g
 read"`** + `Ctrl-S`
-<br>![Icon png](ctrl-s_--icon.png)
+<br>![Icon png](imgs/ctrl-s_--icon.png)
 
 ---
 
@@ -188,7 +191,7 @@ Refer to [Arrange Panel or Diagram](Arrange.md) for more information.
 <br>*Move control and indicator terminals to the left and right sides
 respectively and arrange the terminals vertically to the adjacent object.*
 
-![Arrange gif](ctrl-s_a.gif)
+![Arrange gif](imgs/ctrl-s_a.gif)
 
 ---
 
@@ -205,7 +208,7 @@ displays, etc.) and sets the corresponding LabVIEW Align Tool.
 <br>*Align controls by their left edges (excluding any labels, caption,
 display objects).*
 
-![Arrange gif](ctrl-s_aa.gif)
+![Arrange gif](imgs/ctrl-s_aa.gif)
 
 ### `ad` = Align Right Edges
 See [Align Left Edges](#aa--align-left-edges).
@@ -226,19 +229,19 @@ See [Align Left Edges](#aa--align-left-edges).
 
 ### `c` = Connect Pane
 Connects the selected front panel controls or indicators to the VI's connector
-pane. If nothing is selected this connects all controls and indicators. Wired
+pane. If nothing is selected this connects all controls and indicators. Already wired
 controls are ignored. Error clusters are prioritized to the bottom-left and
-bottom-right connector pane positions. Hold `Shift` to start wiring in the
+bottom-right connector pane terminals. Hold `Shift` to start wiring in the
 middle.
 
 > **Support:** `FP` | **GObject:** `Controls` | **Selection:** `0+`
 
 **Usage:** `c` + `Ctrl-S`
 
-**Example:** `FP` + `Select Controls` + `Ctrl-Space` + **`"c"`** + `Ctrl-S`
+**Example:** `FP` + `Ctrl-Space` + **`"c"`** + `Ctrl-S`
 <br>*Wire selected controls to empty connector pane terminals.*
 
-![Connect Pane gif](ctrl-s_c.gif)
+![Connect Pane gif](imgs/ctrl-s_c.gif)
 
 ---
 
@@ -254,7 +257,7 @@ Horizontally' or 'Arrange Vertically'.
 **Example:** `FP` + `Select Cluster` + `Ctrl-Space` + **`"cv"`** + `Ctrl-S`
 <br>*Auto size the selected cluster vertically.*
 
-![Cluster Size Vertically gif](ctrl-s_cv.gif)
+![Cluster Size Fit gif](imgs/ctrl-s_cf.gif)
 
 ### `ch` = Cluster Size Horizontally
 See [Cluster Size Fit](#cf--cluster-size-fit).
@@ -279,7 +282,7 @@ corresponding LabVIEW Distribute Tool.
 **Example:** `FP` + `Select Controls` + `Ctrl-Space` + **`"d"`** + `Ctrl-S`
 <br>*Vertically compresses selected controls.*
 
-![Distribute Vertical Compress gif](ctrl-s_d.gif)
+![Distribute Vertical Compress gif](imgs/ctrl-s_d.gif)
 
 ### `da` = Distribute Left Edges
 See [Distribute Vertical Compress](#d--distribute-vertical-compress).
@@ -314,6 +317,7 @@ See [Distribute Vertical Compress](#d--distribute-vertical-compress).
 Resizes the panel or diagram window to content. On the panel, the window
 resizes to the bottom-right most control and resets the panel origins
 to 0, 0 (even if there are controls top or left of the origins).
+On the diagram, the window resizes to the content.
 
 > **Support:** `FP | BD` | **GObject:** `N/A` | **Selection:** `N/A`
 
@@ -322,16 +326,16 @@ to 0, 0 (even if there are controls top or left of the origins).
 **Example:** `BD` + `Ctrl-Space` + **`"e"`** + `Ctrl-S`
 <br>*Resizes the block diagram window to content.*
 
-![Resizes Window gif](ctrl-s_e.gif)
+![Resizes Window gif](imgs/ctrl-s_e.gif)
 
 ---
 
 ### `er` = Error Structure
+On the diagram, this wires the selected case structure to
+the error wire if exists. If the selected case structure selector
+is already wired, this does nothing.
 On the panel, this replaces the selected controls or indicators with
-`Error In 3D.ctl` and `Error Out 3D.ctl` respectively. On the diagram, this
-wires the selected case structure selector to the connected error wire and
-wires the error out terminal if exists. If the selected case structure
-selector is already wired, this does nothing.
+`Error In 3D.ctl` and `Error Out 3D.ctl` respectively.
 <br>Error 1055 is raised if no error wire if found connected to the case
 structure.
 
@@ -344,7 +348,7 @@ structure.
 `Ctrl-S`
 <br>*Rewire the case structure to the error wire.*
 
-![Error Structure gif](ctrl-s_er.gif)
+![Error Structure gif](imgs/ctrl-s_er.gif)
 
 ---
 
@@ -361,7 +365,7 @@ buttons.*
 **Example:** `FP` + `Select Numeric` + `Ctrl-Space` + **`"hb"`** + `Ctrl-S`
 <br>*Hide the inc/dec buttons.*
 
-![Hide Inc/Dec Buttons gif](ctrl-s_hb.gif)
+![Hide Inc/Dec Buttons gif](imgs/ctrl-s_hb.gif)
 
 ### `hc` = Hide Caption
 Hides the captions on the selected controls.
@@ -434,8 +438,6 @@ Flattens the VI icon layers to avoid icon template collisions.
 **Example:** `FP` + `Ctrl-Space` + **`"m"`** + `Ctrl-S`
 <br>*Flattens icon layers.*
 
-![Merge Icon Layers gif](ctrl-s_m.gif)
-
 ---
 
 ### `o` = Reset Panel Origins
@@ -449,7 +451,7 @@ enabled.
 **Example:** `FP` + `Ctrl-Space` + **`"o"`** + `Ctrl-S`
 <br>*Resets all panel origins.*
 
-![Reset Panel Origins gif](ctrl-s_o.gif)
+![Reset Panel Origins gif](imgs/ctrl-s_o.gif)
 
 ---
 
@@ -471,7 +473,7 @@ Strings | String Constants` | **Selection:** `1+`
 `Ctrl-S`
 <br>*Display numeric radix in binary (e.g. `00000000`).*
 
-![Radix Binary or Backslash gif](ctrl-s_rb.gif)
+![Radix Binary or Backslash gif](imgs/ctrl-s_rb.gif)
 
 ### `rd` = Radix Decimal or Normal
 Shows the radix display in decimal (or normal) on the selected numerics
@@ -515,10 +517,7 @@ buttons.*
 
 **Usage:** `sb` + `Ctrl-S`
 
-**Example:** `FP` + `Select Numeric` + `Ctrl-Space` + **`"sb"`** + `Ctrl-S`
-<br>*Show the inc/dec buttons.*
-
-![Show Inc/Dec Buttons gif](ctrl-s_sb.gif)
+**Example:** See [Hide Inc/Dec Buttons](#sb--hide-incdec-buttons).
 
 ### `sc` = Show Caption
 Shows the captions on the selected controls. If the caption is empty, the
@@ -529,7 +528,7 @@ label is used, if the label is empty a "Caption" placeholder is created.
 
 **Usage:** `sc` + `Ctrl-S`
 
-**Example:** See [Show Inc/Dec Buttons](#sb--show-incdec-buttons).
+**Example:** See [Hide Inc/Dec Buttons](#sb--hide-incdec-buttons).
 
 ### `si` = Show Index Display
 Shows the index displays on the selected arrays if they exist.
@@ -540,7 +539,7 @@ Shows the index displays on the selected arrays if they exist.
 
 **Usage:** `si` + `Ctrl-S`
 
-**Example:** See [Show Inc/Dec Buttons](#sb--show-incdec-buttons).
+**Example:** See [Hide Inc/Dec Buttons](#sb--hide-incdec-buttons).
 
 ### `sl` = Show Label
 Shows the labels on the selected objects if they exist.
@@ -551,7 +550,7 @@ Shows the labels on the selected objects if they exist.
 
 **Usage:** `sl` + `Ctrl-S`
 
-**Example:** See [Show Inc/Dec Buttons](#sb--show-incdec-buttons).
+**Example:** See [Hide Inc/Dec Buttons](#sb--hide-incdec-buttons).
 
 ### `ss` = Show Scrollbars
 Shows the scrollbars on the selected objects with scrollbars if they exist.
@@ -562,12 +561,14 @@ Shows the scrollbars on the selected objects with scrollbars if they exist.
 
 **Usage:** `ss` + `Ctrl-S`
 
-**Example:** See [Show Inc/Dec Buttons](#sb--show-incdec-buttons).
+**Example:** See [Hide Inc/Dec Buttons](#sb--hide-incdec-buttons).
 
 ---
 
 ### `sel` = Select Controls and Indicators
 Selects all controls and indicators on the panel or diagram.
+This is primarily useful when daisy chaining multiple shortcuts
+together.
 
 > **Support:** `FP | BD` | **GObject:** `Controls | Control Terminals` |
 **Selection:** `N/A`
@@ -577,7 +578,7 @@ Selects all controls and indicators on the panel or diagram.
 **Example:** `FP` + `Ctrl-Space` + **`"sel"`** + `Ctrl-S`
 <br>*Select all controls and indicators on panel.*
 
-![Select Controls and Indicators gif](ctrl-s_sel.gif)
+![Select Controls and Indicators gif](imgs/ctrl-s_sel.gif)
 
 ### `selc` = Select Controls
 Selects all controls on the panel or diagram.
@@ -627,7 +628,7 @@ etc.) are excluded when snapping to nearest grid size.
 **Example:** `FP` + `Select controls` + `Ctrl-Space` + **`"sg"`** + `Ctrl-S`
 <br>*Snap the selected controls to nearest grid position.*
 
-![Snap to Panel Grid gif](ctrl-s_sg.gif)
+![Snap to Panel Grid gif](imgs/ctrl-s_sg.gif)
 
 ---
 
@@ -643,7 +644,7 @@ Integer (U8).
 **Example:** `FP` + `Select controls` + `Ctrl-Space` + **`"u8"`** + `Ctrl-S`
 <br>*Change the selected numeric controls to Unsigned 8-bit.*
 
-![Change to U8 gif](ctrl-s_u8.gif)
+![Change to U8 gif](imgs/ctrl-s_u8.gif)
 
 ### `u16` = Change to U16
 Changes the selected numeric data type representations to Unsigned 16-bit
@@ -743,7 +744,7 @@ reorder)_. Press **OK** to save.
 *Custom shortcuts are saved to disk at:
 `<LabVIEW>\resource\dialog\QuickDrop\plugins\_Script\shortcuts.txt`.*
 
-![Help gif](ctrl-s_help.gif)
+![Help gif](imgs/ctrl-s_help.gif)
 
 ### Custom Script Plugins
 Create your own script plugins using the VI Template (\*.vit) located at:

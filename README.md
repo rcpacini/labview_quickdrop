@@ -23,11 +23,14 @@ See [releases](releases) to download other versions.
 ---
 
 ## Getting Started
-Open the example VI at
-`<LabVIEW>\examples\rcpacini\Ryans Quick Drop Shortcuts\Ryans Quick Drop Example.vit`
-to see an example on how to use these plugins.
+Refer to the documentation below to see examples on how to use
+each of the Quick Drop Shortcuts and IDE Plugins.
 
-![Getting Start gif](docs/gettingstarted.gif)
+![Demo gif](docs/imgs/demo.gif)
+
+*Once installed, an example VI is also located at:<br>
+`<LabVIEW>\examples\rcpacini\Ryans Quick Drop Shortcuts\Ryans Quick Drop Example.vit`*
+
 
 ---
 
@@ -45,31 +48,41 @@ Refer to the Quick Drop Plugin help for more information:
 ### Quick Drop - Panel and Diagram Shortcuts
 
 **(Optional)** Run the [Panel and Diagram Shortcuts](https://github.com/rcpacini/labview_quickdrop/raw/master/QuickDrop/plugins/_Script/_PanelDiagramShortcuts.vi)
-VI to replace the Quick Drop Panel & Diagram Shortcuts.
-***Note: LabVIEW must be restarted to reload the Quick Drop Shortcuts.***
+VI to replace the Quick Drop Panel & Diagram Shortcuts in the
+`<LabVIEW>\LabVIEW.ini` file.<br>
+***Note: LabVIEW must be restarted to reload the Quick Drop
+Shortcuts.***
 
-![Ryans Quick Drop Shortcuts](docs/ShortcutsScreenshot.png)
+![Ryans Quick Drop Shortcuts](docs/imgs/ShortcutsScreenshot.png)
 
-[Download](https://github.com/rcpacini/labview_quickdrop/raw/master/docs/PanelDiagramShortcuts.png)
+[Download VI Snippet (LV2019)](https://github.com/rcpacini/labview_quickdrop/raw/master/docs/imgs/PanelDiagramShortcuts.png)
 
 ---
 
 ### Tools Menu - Plugins
+Refer to the Project Properties help for more information.
 
-| Tools Menu Plugins | Description |
+| Tools Menu Plugins | Documentation |
 | --- | --- |
-| `Tools > Project Properties...` | [Project VI Properties Browser](docs/ProjectProperties.md) |
+| `Tools > Ryans Project Properties...` | [Project Properties Explorer](docs/ProjectProperties.md) |
+
+![Project Properties Demo png](docs/imgs/project_properties_demo.png)
 
 ---
 
-## Build
-To edit the source code, open the `QuickDrop\RyansQuickDropShortcuts.lvproj`
+## Build Specifications
+### Source Code
+To edit the source code, open the
+`QuickDrop\RyansQuickDropShortcuts.lvproj`
 project in LabVIEW 2019+, keep the `VI_Tree.vi` open to ensure all VI
 dependencies are loaded while editing. Save the project.
 
-To rebuild the VI Package, open the `QuickDrop\RyansQuickDropShortcuts.vipb`
+### VI Package
+To rebuild the VI Package, open the
+`QuickDrop\RyansQuickDropShortcuts.vipb`
 VI Package Build in VI Package Manager 2019+, edit the package details.
-Press Build to output the VI Package (\*.vip) into the `releases` directory.
+Press Build to output the VI Package (\*.vip) into the `releases`
+directory.
 
 This package installs the Quick Drop Shortcuts to  
 `<LabVIEW>\resource\dialog\QuickDrop\plugins`:

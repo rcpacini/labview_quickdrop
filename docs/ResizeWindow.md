@@ -1,6 +1,7 @@
 # `Ctrl-E` = Resize Window
 Resizes the front panel or block diagram window to fit the content.
 
+## Methods
 There are variations depending on Front Panel (`FP`) or Block Diagram
 (`BD`) focus.
 
@@ -12,13 +13,16 @@ There are variations depending on Front Panel (`FP`) or Block Diagram
 ---
 
 ## `FP` = Resize Panel Window
-Resizes the panel window to content and resets the panel origins to (0, 0).
+Resizes the panel window to content and resets the panel origins
+to (0, 0).
 
 > **Support:** `FP` | **GObject:** `N/A` | **Selection:** `N/A`
 
 **Usage:** `FP` + `Ctrl-E`
 
-![Resize Panel gif](ctrl-e_fp.gif)
+**Example:** `FP` + `Ctrl-Space` + `Ctrl-E`
+
+![Resize Panel gif](imgs/ctrl-e_fp.gif)
 
 ---
 
@@ -29,4 +33,8 @@ Resizes the diagram window to content.
 
 **Usage:** `BD` + `Ctrl-E`
 
-![Resize Diagram gif](ctrl-e_bd.gif)
+**Example:** `BD` + `Ctrl-Space` + `Ctrl-E`
+
+![Resize Diagram gif](imgs/ctrl-e_bd.gif)
+
+---
