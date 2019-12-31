@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-12-17 17:45:22" Creator="rcpac" Comments="" ID="e278d9492177b798e671e9ca2a2f4086">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2019-11-15 23:54:42" Modified_Date="2019-12-30 18:34:35" Creator="rcpac" Comments="" ID="117fead797994029f663501c677a54ca">
   <Library_General_Settings>
     <Package_File_Name>Ryans_Quick_Drop_Shortcuts</Package_File_Name>
-    <Library_Version>0.3.0.24</Library_Version>
+    <Library_Version>0.3.1.24</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\releases</Library_Output_Folder>
@@ -42,9 +42,12 @@ Tools Menu Plugins:
       <Copyright/>
       <Packager>Ryan Pacini</Packager>
       <URL>https://github.com/rcpacini/labview_quickdrop</URL>
-      <Release_Notes>v0.3.0: 
-- Removed Get Info ('g') QD Plugin
-- Added 'Tools &gt; Ryans Project Properties' VI property viewer</Release_Notes>
+      <Release_Notes>v0.3.1:
+- Fixed Arrange ('a') constant position when wired to control terminal 
+- Fixed Arrange ('a') for different bundler styles
+- Update Arrange ('a') panel by connector pane by default
+- Fixed Resize Window ('e') on ctl windows
+- Removed '--icon'</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
