@@ -24,9 +24,9 @@
 		<Item Name="_builtins_distribute_selected.vi" Type="VI" URL="../_builtins_distribute_selected.vi"/>
 		<Item Name="_builtins_error_structure.vi" Type="VI" URL="../_builtins_error_structure.vi"/>
 		<Item Name="_builtins_icon.vi" Type="VI" URL="../_builtins_icon.vi"/>
-		<Item Name="_builtins_icon_color.vi" Type="VI" URL="../_builtins_icon_color.vi"/>
-		<Item Name="_builtins_icon_create.vi" Type="VI" URL="../_builtins_icon_create.vi"/>
-		<Item Name="_builtins_icon_text_add.vi" Type="VI" URL="../_builtins_icon_text_add.vi"/>
+		<Item Name="_builtins_icon_library.vi" Type="VI" URL="../_builtins_icon_library.vi"/>
+		<Item Name="_builtins_icon_resolve_8bit_color.vi" Type="VI" URL="../_builtins_icon_resolve_8bit_color.vi"/>
+		<Item Name="_builtins_icon_text.vi" Type="VI" URL="../_builtins_icon_text.vi"/>
 		<Item Name="_builtins_merge_icon_layers.vi" Type="VI" URL="../_builtins_merge_icon_layers.vi"/>
 		<Item Name="_builtins_move_label.vi" Type="VI" URL="../_builtins_move_label.vi"/>
 		<Item Name="_builtins_move_relative.vi" Type="VI" URL="../_builtins_move_relative.vi"/>

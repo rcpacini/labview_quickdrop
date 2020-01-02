@@ -16,6 +16,7 @@
 		<Item Name="Escape.vi" Type="VI" URL="../Escape.vi"/>
 		<Item Name="Get VI Property.vi" Type="VI" URL="../Get VI Property.vi"/>
 		<Item Name="Init.vi" Type="VI" URL="../Init.vi"/>
+		<Item Name="Open in Explore.vi" Type="VI" URL="../Open in Explore.vi"/>
 		<Item Name="Populate Tree.vi" Type="VI" URL="../Populate Tree.vi"/>
 		<Item Name="State.vi" Type="VI" URL="../State.vi"/>
 	</Item>
