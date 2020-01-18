@@ -14,6 +14,7 @@
 	</Item>
 	<Item Name="Dialog.vi" Type="VI" URL="../Dialog.vi"/>
 	<Item Name="Display Info.vi" Type="VI" URL="../Display Info.vi"/>
+	<Item Name="Error Dialog.vi" Type="VI" URL="../Error Dialog.vi"/>
 	<Item Name="Execute.vi" Type="VI" URL="../Execute.vi"/>
 	<Item Name="Parse Args.vi" Type="VI" URL="../Parse Args.vi"/>
 	<Item Name="Relative Path.vi" Type="VI" URL="../Relative Path.vi"/>
