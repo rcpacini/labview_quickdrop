@@ -47,7 +47,7 @@ Refer to the Quick Drop Plugin help for more information:
 
 ### Quick Drop - Panel and Diagram Shortcuts
 
-**(Optional)** Run the [Panel and Diagram Shortcuts](https://github.com/rcpacini/labview_quickdrop/raw/master/QuickDrop/plugins/_Script/_PanelDiagramShortcuts.vi)
+**(Optional)** Run the [Panel and Diagram Shortcuts](https://github.com/rcpacini/labview_quickdrop/raw/master/src/plugins/_Script/PanelDiagramShortcuts.vi)
 VI to replace the Quick Drop Panel & Diagram Shortcuts in the
 `<LabVIEW>\LabVIEW.ini` file.<br>
 ***Note: LabVIEW must be restarted to reload the Quick Drop
