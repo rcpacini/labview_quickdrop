@@ -16,7 +16,7 @@ To install, download and run the VI Package (\*.vip) using JKI's
 
 | VI Package | LabVIEW | VIPM |
 | --- | --- | --- |
-| [ryans_quick_drop_shortcuts-0.3.0.23.vip](https://github.com/rcpacini/labview_quickdrop/raw/master/releases/ryans_quick_drop_shortcuts-0.3.0.23.vip) | LV2019+ | 2019+ |
+| [ryans_quick_drop_shortcuts-0.5.0.27.vip](https://github.com/rcpacini/labview_quickdrop/raw/master/releases/ryans_quick_drop_shortcuts-0.5.0.27.vip) | LV2019+ | 2019+ |
 
 See [releases](releases) to download other versions.
 
