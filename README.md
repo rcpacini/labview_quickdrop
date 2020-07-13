@@ -23,10 +23,18 @@ See [releases](releases) to download other versions.
 ---
 
 ## Getting Started
-Refer to the documentation below to see examples on how to use
-each of the Quick Drop Shortcuts and IDE Plugins.
+Ryan's Quick Drop Shortcuts installs 3 shortcuts:
+* `Ctrl-A` [Arrange Panel or Diagram](docs/Arrange.md)
+* `Ctrl-E` [Resize Window](docs/ResizeWindow.md)
+* `Ctrl-S` [Execute Script](docs/ExecuteScript.md)
+And also installs a VI Properties view to `Tools > Ryans Project Properties...`
 
-![Demo gif](docs/imgs/demo.gif)
+The Execute Script plugin (`Ctrl-s`) has a built in dialog to
+edit your own keyboard shortcuts. Open the help dialog:
+
+`Ctrl-Space + 'help' + Ctrl-S`
+
+![Demo gif](docs/imgs/ExecuteScriptHelp.gif)
 
 *Once installed, an example VI is also located at:<br>
 `<LabVIEW>\examples\rcpacini\Ryans Quick Drop Shortcuts\Ryans Quick Drop Example.vit`*
