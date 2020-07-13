@@ -27,6 +27,7 @@ Ryan's Quick Drop Shortcuts installs 3 shortcuts:
 * `Ctrl-A` [Arrange Panel or Diagram](docs/Arrange.md)
 * `Ctrl-E` [Resize Window](docs/ResizeWindow.md)
 * `Ctrl-S` [Execute Script](docs/ExecuteScript.md)
+
 And also installs a VI Properties view to `Tools > Ryans Project Properties...`
 
 The Execute Script plugin (`Ctrl-s`) has a built in dialog to
